@@ -4,6 +4,7 @@
 //
 
 #include<iostream>
+#include<iomanip> //for setw();
 
 using namespace std;
 
@@ -27,13 +28,8 @@ void dist::getdata()
 {
   cout << endl << "Enter distance in  inches : ";
   cin >> inches;
-  cout << endl << "Enter distance in feets : ";
+  cout << "Enter distance in feets : ";
   cin >> feets;
-}
-
-void dist::putdata()
-{
-  cout << endl << "inches = " << inches << "\tfeets = " << feets;
 }
 
 int main()
@@ -42,8 +38,6 @@ int main()
   float m;
 
   d.getdata();
-  d.putdata();
-
   m = d;
   cout << endl << d.getfeets() << " Feets = " << d.getfeets() * 0.3048 << " Meters";
 
