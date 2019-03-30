@@ -1,0 +1,1 @@
+Those files which includes user header files must be compiled with along with that header file name. eg: g++ jmi_p1.cpp myfunction.cpp'
