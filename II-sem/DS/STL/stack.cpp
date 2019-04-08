@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
   int choice;
-  stack <int> s;
+  stack <int> s; // we can also create array of stacks by writing 'stack <int> s[3]'
 
   while(1)
   {
