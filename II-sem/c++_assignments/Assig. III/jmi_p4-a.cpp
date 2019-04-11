@@ -17,8 +17,10 @@ class DISTANCE{
 };
 void DISTANCE::getdata()
 {
+    cout << endl << "Enter feet : ";
     cin >> feet;
-    inches =  feet * 12;
+    cout << "Enter inches : ";
+    cin >> inches;
 }
 void DISTANCE::show()
 {
@@ -27,9 +29,14 @@ void DISTANCE::show()
 
 void DISTANCE:: operator < ( DISTANCE d)
 {
-    if ( feet < d.feet )
+  float d1, d2;
+
+  d1 = feet + inches * 1/12;     //total distance in feets 
+  d2 = d.feet + d.inches * 1/12; //total distance in feets
+   
+    if ( d1 < d2 )
       cout << endl << "D1 is less than D2.";
-    else if ( d.feet < feet )
+    else if ( d2 < d1 )
       cout << endl << "D2 is less than D1.";
     else
       cout << endl << "Both distance are same.";    
@@ -39,9 +46,7 @@ int main()
 {
     DISTANCE d1, d2;
     
-    cout << endl << "Enter distance in feet (D1) :\t";
     d1.getdata();
-    cout << endl << "Enter distance in feet (D2) :\t";
     d2.getdata();
     
     cout << endl << "D1 : \t";

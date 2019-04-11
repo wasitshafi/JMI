@@ -17,8 +17,10 @@ class DISTANCE{
 };
 void DISTANCE::getdata()
 {
+    cout << endl << "Enter feet : ";
     cin >> feet;
-    inches =  feet * 12;
+    cout << "Enter inches : ";
+    cin >> inches;
 }
 void DISTANCE::show()
 {
@@ -27,10 +29,9 @@ void DISTANCE::show()
 
 void DISTANCE:: operator += ( DISTANCE d)
 {
-    feet += d.feet;
-    inches = feet * 12;
+    feet += d.feet + d.inches  * 1/12 + inches  * 1/12;
+    inches = 0; 
 }
-
 
 int main()
 {
