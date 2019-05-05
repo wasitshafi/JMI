@@ -67,6 +67,10 @@ int main()
     STACK <int> s(n);
     int intItem;
 
+    //STACK <char> s(n);     In case you have to create stack of  type char
+    //char charItem;
+    
+
   while(1)
   {
     cout << endl << endl << "  1 -> Push Element";

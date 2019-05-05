@@ -10,16 +10,17 @@ template<class T>
 void sort(T &arr, int n)
 {
   int i, j;
-  float key; // float can adjust both 'int' as well as 'float' while comparison
-    for (i = 1; i < n; i++)
+  float key;      // float can hold value both 'int' as well as 'float' while comparison without data loss
+    for (i = 1; i < n; i++) // Insertion sort
     { 
-        key = arr[i]; 
-        j = i - 1; 
-        while (j >= 0 && arr[j] > key) { 
-            arr[j + 1] = arr[j]; 
-            j = j - 1; 
+      key = arr[i]; 
+      j = i - 1; 
+        while (j >= 0 && arr[j] > key)
+        { 
+          arr[j + 1] = arr[j]; 
+          j = j - 1; 
         } 
-        arr[j + 1] = key; 
+      arr[j + 1] = key; 
     } 
 }
 
