@@ -2,9 +2,8 @@
 //
 //
 //
-
 #include<iostream>
-#include<iomanip> //for setw();
+#include<iomanip>
 
 using namespace std;
 
@@ -14,13 +13,14 @@ class dist{
 
 public:
   void getdata();
-  void putdata();
-  int getfeets(){ return feets; }
-
+  float getInches(){ return inches; };
+  float getFeets(){ return feets; }
   operator float()
   {
-    cout << endl << endl << inches << " Inches = " << inches * 0.0254 << " Meters";
-    return feets * 0.3048;
+      float totalFeets;
+      totalFeets = feets + inches*1/12;
+
+      return totalFeets*1/3.28;
   }
 };
 
@@ -39,7 +39,7 @@ int main()
 
   d.getdata();
   m = d;
-  cout << endl << d.getfeets() << " Feets = " << d.getfeets() * 0.3048 << " Meters";
-
+  cout << endl << "Meters(" << d.getFeets() << " F + " << d.getInches() << " I) = " << m;
+  
   return 0;
 }

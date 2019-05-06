@@ -23,18 +23,23 @@ class number{
 			else
 			return 0;
 		}
+		
+ 		inline int getNum()
+		{
+			return num;
+		}
 };
 
 int main()
 {
     number n;
 	
-	o.getdata();
+	n.getdata();
 	
 	if(!n)
-	cout << endl << " is Even.";
+	cout << endl << n.getNum() << " is Even.";
 	else
-	cout << endl << " is Odd.";
+	cout << endl << n.getNum() << " is Odd.";
 	
 	return 0;
 }

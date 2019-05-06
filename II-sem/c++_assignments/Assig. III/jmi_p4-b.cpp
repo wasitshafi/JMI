@@ -29,8 +29,8 @@ void DISTANCE::show()
 
 void DISTANCE:: operator += ( DISTANCE d)
 {
-    feet += d.feet + d.inches  * 1/12 + inches  * 1/12;
-    inches = 0; 
+    feet += d.feet;
+    inches += d.inches;  
 }
 
 int main()

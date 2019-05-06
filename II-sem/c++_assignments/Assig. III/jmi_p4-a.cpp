@@ -3,6 +3,7 @@
 //
 //
 #include<iostream>
+#include<iomanip>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ class DISTANCE{
 
     void getdata();
     void show();
-    void operator < (DISTANCE);
+    bool operator < (DISTANCE);
 };
 void DISTANCE::getdata()
 {
@@ -27,7 +28,7 @@ void DISTANCE::show()
     cout << "Feet = " << feet << "\tInches = " << inches;
 }
 
-void DISTANCE:: operator < ( DISTANCE d)
+bool DISTANCE:: operator < ( DISTANCE d)
 {
   float d1, d2;
 
@@ -35,11 +36,9 @@ void DISTANCE:: operator < ( DISTANCE d)
   d2 = d.feet + d.inches * 1/12; //total distance in feets
    
     if ( d1 < d2 )
-      cout << endl << "D1 is less than D2.";
-    else if ( d2 < d1 )
-      cout << endl << "D2 is less than D1.";
+     return true;
     else
-      cout << endl << "Both distance are same.";    
+     return false;
 }
 
 int main()
@@ -55,7 +54,11 @@ int main()
     d2.show();
     
     cout << endl ;
-    d1 < d2 ;// d1.operator<(d2);
-
+    
+    if(d1   < d2) // d1.operator<(d2);
+    cout << endl << "d1 < d2 = true";
+    else
+    cout << endl << "d1 < d2 = false";
+    
     return 0;
 }
