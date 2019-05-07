@@ -1,0 +1,13 @@
+ios::app      => append mode
+ios::ate      => goto end of file on opening
+ios::binary   => binary file
+ios::in       => read only mode
+ios::nocreate => open fails if file does not exists
+ios::noreplace=> open fails if file already exists
+ios::out      => write only mode
+ios::trunc    => delete previous content if file exists
+
+seekg         => Moves get pointer(input) to specific location. 
+seekp         => Moves put pointer(output) to specific location.
+tellg         => Gives the current position of the get pointer(input)
+tellp         => Gives the current position of the put pointer(output)
