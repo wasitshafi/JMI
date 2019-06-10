@@ -2,6 +2,7 @@
 //jmi_p9.cpp
 //
 //program to multiply Matrix & Vector using friend function
+//Refer this for more info :https://www.youtube.com/watch?v=yT_MNj4CX5U
 
 #include<bits/stdc++.h>
 
