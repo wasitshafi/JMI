@@ -1,4 +1,4 @@
-public class iib{
+public class IIB{
     int x; 
     static int s;
     iib()
