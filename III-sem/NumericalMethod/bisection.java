@@ -4,10 +4,8 @@
 //program to find square root of n using bisection method
 //
 import java.util.Scanner;
-
-import javax.lang.model.util.ElementScanner6;
-
 import java.lang.Math;
+
 public class bisection
 {
     public double getUpperLimit(double n)
@@ -25,7 +23,6 @@ public class bisection
         Scanner scan = new Scanner(System.in);
         bisection root = new bisection();
         double n, ul, ll, mid = 0;
-        int count = 0;
 
         System.out.print("Enter value of n : ");
         n = scan.nextDouble();
