@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.math.BigInteger; 
+import java.math.BigDecimal;
 
 public class scannerClass
 {
@@ -19,8 +21,10 @@ public class scannerClass
         char ch;        // 2 bytes
 
         boolean bool;   // 1 bit
-      
 
+        Integer integer = 0;                          // This is also object
+        BigInteger bigInteger = new BigInteger("0");  // Creating Object  // BigInteger has constructor that takes string arguments
+        BigDecimal bigDecimal = new BigDecimal("0");  // Creating Object
 
         System.out.print("Enter String : ");
         str = scan.nextLine(); // reading string along with spaces. Alternate Method : scan.next() reads the string without spaces
@@ -28,8 +32,6 @@ public class scannerClass
         System.out.print("Enter char : ");
         ch = scan.next().charAt(0);
         
-
-
         System.out.print("Enter Integer : ");
         i = scan.nextInt();
 
@@ -41,6 +43,7 @@ public class scannerClass
         
         
 
+
         System.out.print("Enter float : ");
         f = scan.nextFloat();
         
@@ -50,6 +53,17 @@ public class scannerClass
         System.out.print("Enter boolean value(true/false) : ");
         bool = scan.nextBoolean();
 
+        System.out.print("Enter Integer value : ");
+        integer = scan.nextInt();
+
+        System.out.print("Enter BigInteger value : ");
+        bigInteger = scan.nextBigInteger();
+
+        System.out.print("Enter BigDecimal value : ");
+        bigDecimal = scan.nextBigDecimal();
+
+        System.out.println("\n\nValue are :\n\n");
+        
         System.out.println("String is : " + str); 
         System.out.println("Char  is : " + ch + "\n");
         System.out.println("Integer is : " + i);
@@ -58,7 +72,9 @@ public class scannerClass
         System.out.println("Float is : " + f);
         System.out.println("Double is : " + d + "\n");
         System.out.println("Boolean is : " + bool);
-
+        System.out.println("Integer is : " + integer);
+        System.out.println("BigInteger is : " + bigInteger);
+        System.out.println("BigDecimal is : " + bigDecimal);
         scan.close();
-    }
+      }
 }

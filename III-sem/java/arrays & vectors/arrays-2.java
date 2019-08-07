@@ -11,6 +11,7 @@ public class arrays{
         n = scan.nextInt();
         arr = new int[n]; // instantiation
         
+
         // alternate methods
         // int arr[] = new int[n];   // declaration & instantiation.
         //int a[] = {33, 3, 4, 5};   //declaration, instantiation and initialization.
