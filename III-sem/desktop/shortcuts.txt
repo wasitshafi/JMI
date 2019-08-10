@@ -1,0 +1,3 @@
+Close    : ctrl + q
+Minimize : super key + h
+Maximize : spter key + up arrow
