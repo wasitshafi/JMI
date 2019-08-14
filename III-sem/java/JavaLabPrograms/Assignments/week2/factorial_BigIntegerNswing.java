@@ -1,7 +1,12 @@
+//factorial_BigIntegerNswing.java
+//
+//Q:  Write a Factorial problem using Big Number classes (such as BigInteger) to compute Factorial of a large number.
+//    Take inputs from the user using Swing input dialog box and display output using message dialog.
+//
 import java.math.*;
 import javax.swing.*;
 
-public class factorial2
+public class factorial_BigIntegerNswing
 {
     public static void main(String []args)
     {
@@ -14,6 +19,7 @@ public class factorial2
         for(int i = 1 ; i <= n ; i++)
             fact = fact.multiply(BigInteger.valueOf(i));
 
-        System.out.print("Factorial of " + n + " is : " + fact);
+        JOptionPane.showMessageDialog(null, "Factorial of " + n + " is : " + fact);
+       // JOptionPane.showMessageDialog
     }
 }

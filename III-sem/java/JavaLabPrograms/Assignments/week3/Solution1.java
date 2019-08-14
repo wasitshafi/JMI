@@ -1,7 +1,8 @@
-//
-//
-//
-//
+/* Problem: 
+  Write a menu driven program to create two m x n matrix, populate it with random integers and display their sum and product.
+  Also display the time taken by the computer for the product operation. Make use of classes, constructors and necessary methods.
+  Test your program for 500x500 matrix and display the computational time for the product operation.
+*/
 import java.util.Scanner;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
