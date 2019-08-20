@@ -22,11 +22,24 @@ class Matrix
     public int getCols(){ return cols; }
     public void setMatrix()
     {
+        Scanner scan = new Scanner(System.in);
         Random rand = new Random();
-        int i, j, upperLimit = 10000;
+        int min, max, i, j;
+        
+        do{
+            System.out.print("Enter Minimum value   : ");
+            min = scan.nextInt();
+            System.out.print("Enter Maximum value   : ");
+            max = scan.nextInt();
+            
+            if(min >= max)
+               System.out.println("Invalid Input...! Try Again.");
+          
+          }while(min >= max);
+
         for ( i = 0 ; i < rows ; i++ )
             for( j = 0 ; j < cols ; j++ )
-                M[i][j] = rand.nextInt(upperLimit); // now the random no. will be from 0 to 9999
+                M[i][j] = rand.nextInt(max - min) + min;
     }
 
     public void printMatrix()
@@ -63,6 +76,7 @@ class Matrix
     {
         int i, j, k;
         int resultant[][] = new int[rows][X.cols];
+        
         long start = System.nanoTime();
         for( i = 0 ; i < rows ; i++ )
         {
@@ -73,6 +87,9 @@ class Matrix
                    resultant[i][j] += M[i][k]* X.M[k][j];
             }
         }
+        long end = System.nanoTime();
+        long elapsedTime = end - start;
+
         // Printing resultant matrix
         for ( i = 0 ; i < rows ; i++ )
         {
@@ -81,12 +98,10 @@ class Matrix
             System.out.println();
         }
 
-        long end = System.nanoTime();
-        long elapsedTime = end - start;
         return elapsedTime;
     }
 }
-public class Solution1new
+public class Solution
 {
     public static void main(String []args)
     {
@@ -153,7 +168,10 @@ public class Solution1new
                             long elapsedTime;
                             System.out.println("Matrix A * Matrix B");
                             elapsedTime = A.mult(B); // return  elapsed time in nanosec. // converting nanosec to milisec refer: https://www.checkyourmath.com/convert/time/nanoseconds_milliseconds.php
-                            System.out.print("Total Time take for Multiplication is : " + (elapsedTime / 1000000) + "ms");
+                            
+                            System.out.print("Total Time take for Multiplication is : " + (elapsedTime) + "ns");
+                                                // or
+                            //System.out.print("Total Time take for Multiplication is : " + (elapsedTime / 1000000) + "ms");
                          }
                          break;
                 case 0 : break loop; // using labled loop to exit
