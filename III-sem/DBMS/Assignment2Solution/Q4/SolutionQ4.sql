@@ -54,8 +54,8 @@ select hiredate, count(*) from emp2 group by extract(year from hiredate)
 select extract(year from hiredate) from emp2 ;
 
 --10
-select * from emp2
 select deptno, sum(sal+comm) from emp2 group by deptno; -- list of dept with their total rem. but how to select max one deptno
+
 --11
 select * from emp2 where hiredate = (select max(hiredate) from emp2)
 
@@ -64,3 +64,15 @@ select E1.empno, E1.ename, E1.job, E1.mgr, E1.hiredate, E1.sal, E1.comm, E1.dept
 
 -- to view the average salary for each department use the below mentioned query:
 select deptno, avg(sal) from emp2 group by deptno
+
+--13
+select * from (select sal ,dense_rank() over (order by sal desc) ranking from emp2 ) where ranking = 2
+
+****************Alternate********************
+select * from emp2 where sal = (select max(sal) from emp2)// top most salary
+select * from emp2 where sal >= ( select max(sal) from emp2 where sal < (select max(sal) from emp2)) -- top 2 most salary
+**************************************
+
+--14
+select empno, ename, job, mgr, hiredate, sal, comm, deptno from emp2 group by empno, ename, job, mgr, hiredate, sal, comm, deptno having count(*) > 1 
+

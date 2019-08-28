@@ -5,15 +5,12 @@ desc emp
 
 select * from emp
 
-
 select ename as "Name", dept_name as "Department", designation as "Designation", salary as "Salary", To_CHAR(date_of_join, 'Mon DD, YYYY') as "Date of Join" from emp
 
-
-
-
-insert into emp (ename, dept_name, designation, salary, date_of_join) values('karan', 'Accounting', 'Director', 50000, '17-Aug-12') -- CTM: we can't specify custom format to store data in oracle DB, although its upto admin. how to show date.Internally date with different formats as same eg: 17 Aug 2018 === 17-08-18 === August 17 2019 and so on. whatever format you provide while inserting EX: 17-August-19 or 17-Aug-19 its going to store in DB like 17-Aug-2018(DD-Mon-YYY) format 
+insert into emp (ename, dept_name, designation, salary, date_of_join) values('karan', 'Accounting', 'Director', 50000, '17-Aug-12') -- CTM: we can't specify custom format to store 'date' in oracle DB, although its upto admin. how to show date.Internally date with different formats as same eg: 17 Aug 2018 === 17-08-18 === August 17 2019 and so on. whatever format you provide while inserting EX: 17-August-19 or 17-Aug-19 its going to store in DB like 17-Aug-2018(DD-Mon-YYY) format 
 
 insert into emp values(:Enter_name, :Enter_dept_name, :Enter_designation, :Enter_salary, :Enter_data_of_Join_DD_MON_YYYY);
+
 
 --a)
 select ename as "Names" from emp where salary < 20000

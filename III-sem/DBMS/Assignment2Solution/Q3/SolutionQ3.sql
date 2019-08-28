@@ -41,6 +41,7 @@ insert into programmer values(:Name, :DOB, :DOJ, :Sex, :Proficiency1, :Proficien
 
 --1
 select avg(scost) from software where devin='oracle'
+		--or
 select sum(scost)/ count(scost) from software where devin = 'oracle'
 
 --2
@@ -96,7 +97,7 @@ select count (ccost) as "Total" from studies where (ccost >=10000 and ccost <= 1
 
 --18
 select avg(ccost) as "Average Fee"  from studies;
-     --or
+    		 --or
 select (sum(ccost)/count(ccost)) as "Average Fee" from studies;
 
 --19
@@ -138,5 +139,9 @@ select  count (*)  as "Total" from programmer where sal between 5000 - 1 and 750
 --30 
 select pname "Name", dob as "DOB", DOJ as "DOJ", upper(sex) as "Sex", prof1  as "Proficiency1" , prof2 as "Proficiency2" from programmer where prof1 not in('c', 'c++', 'Pascal') and  prof2 not in('c', 'c++', 'Pascal')
 
+--31
+
 --32
-select initcap(pname) || ' - has ' || floor(( (sysdate - dob) / 365) * 10 )/10 || ' years of experience.' as "Detalis" from programmer  
+select 'Mr.' || initcap(pname) || ' - has ' || floor(( (sysdate - dob) / 365) * 10 )/10 || ' years of experience.' as "Detalis" from programmer where sex = 'm' union select 'Ms.' || initcap(pname) || ' - has ' || floor(( (sysdate - dob) / 365) * 10 )/10 || ' years of experience.' as "Detalis" from programmer where sex = 'f'
+
+
