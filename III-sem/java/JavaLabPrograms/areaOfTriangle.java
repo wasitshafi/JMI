@@ -1,3 +1,8 @@
+//
+//areaOfTriangle.java
+//
+//program to compute area of triangle using heron's formula
+//
 import java.util.Scanner;
 import java.lang.Math;
 
