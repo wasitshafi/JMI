@@ -44,6 +44,13 @@ select job, max(sal) from emp2 group by job;
 select deptno, max(hiredate) from emp2 group by deptno;
 
 --9
+
+select extract(year from hiredate) as "Year" from emp2 group by extract(year from hiredate) having count(*) = (select max(count(*)) from emp2 group by empno)
+
+
+
+
+
 select * from emp2
 
 select extract(year from hiredate) from emp2;
@@ -53,7 +60,18 @@ select hiredate, count(*) from emp2 group by extract(year from hiredate)
 
 select extract(year from hiredate) from emp2 ;
 
+
+
+
 --10
+select deptno,  sum(sal + comm) from emp2 group by deptno;
+
+select deptno as "Dept.", sum(sal+comm) as "Total Remuneration" from  emp2 group by deptno having sum(sal+comm) = (select max(sum(sal+comm)) from emp2 group by  deptno)
+
+
+
+
+
 select deptno, sum(sal+comm) from emp2 group by deptno; -- list of dept with their total rem. but how to select max one deptno
 
 --11
