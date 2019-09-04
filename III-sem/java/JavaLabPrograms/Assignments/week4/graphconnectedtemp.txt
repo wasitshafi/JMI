@@ -1,0 +1,60 @@
+public void isConnected()
+    {  
+        int temp[][] = new int[adjacencyMatrix.length][adjacencyMatrix.length];
+
+        for(int i = 0 ; i < temp.length ; i++)
+            for(int j = 0 ; j < temp.length ; j++)
+                temp[i][j] = adjacencyMatrix[i][j];
+ // 
+        System.out.println("\nAdjancency matrix is as follows:");
+        for(int i = 0 ; i < temp.length ; i++)
+        {
+            for(int j = 0 ; j < temp.length ; j++)
+                System.out.print(temp[i][j] + "\t");
+            System.out.println();
+        }
+
+//computation
+        for(int k = 0 ; k < temp.length ; k ++)
+        {
+            for(int i = 0 ; i < temp.length ; i++)
+            {
+                for(int j = 0 ; j < temp.length ; j++)
+                {
+                    if(temp[i][k] == 1 && temp[k][j] == 1)
+                        temp[i][j] = 1;
+                }
+            }
+
+           
+            //#################
+            System.out.println("\nAfter iteration" + (k+1));
+            for(int p = 0 ; p < temp.length ; p++)
+            {
+                for(int q = 0 ; q < temp.length ; q++)
+                {
+                    System.out.print(temp[p][q] + "\t");
+                }
+                System.out.println();
+            } 
+
+            //##################
+            
+        }
+
+    // Printing matrix
+
+    System.out.println("\n\n\nFinal Conned matrix is as follows");
+    
+    for(int i = 0 ; i < temp.length ; i++)
+    {
+        for(int j = 0 ; j < temp.length ; j++)
+        {
+            System.out.print(temp[i][j] + "\t");
+        }
+        System.out.println();
+    } 
+
+   }
+
+}
