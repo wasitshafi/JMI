@@ -139,26 +139,35 @@ class WeightedGraph extends Graph
             // copy 
         for(int i = 0 ; i < temp.length ; i++)
             for(int j = 0 ; j < temp.length ; j++)
-                temp[i][j] = Matrix[i][j];
+               if(Matrix[i][j] == 0 && i != j)
+                  temp[i][j] = 50000;  //infinity
+                else
+                  temp[i][j] = Matrix[i][j];
 
+                  
 
-        for(int k = 0 ; k < temp.length ; k ++)
-            for(int i = 0 ; i < temp.length ; i++)
-                for(int j = 0 ; j < temp.length ; j++)
-                    if(temp[i][k] == 1 && temp[k][j] == 1)
-                        temp[i][j] = 1;
-   
+        for (int k = 0; k < Matrix.length; k++){  
+        for (int i = 0; i < Matrix.length; i++){  
+            for (int j = 0; j < Matrix.length; j++)  
+            {  
+                if (temp[i][k] + temp[k][j] < temp[i][j])  
+                    temp[i][j] = temp[i][k] + temp[k][j];  
+            }  
+        }  
+       }
 
-        for(int i = 0 ; i < temp.length ; i++)
-             for(int j = 0 ; j < temp.length ; j++)
-                    if(temp[i][j] == 0)
-                        return false; 
-          return true;
-        
+       System.out.println("Shortest path between vertices is : ");
+       for (int i = 0; i < Matrix.length; i++)
+       {  
+            for (int j = 0; j < Matrix.length; j++)
+            if(temp[i][j] == 50000)
+                System.out.print("0\t");
+            else
+                System.out.print(temp[i][j]+"\t");
+            System.out.println();
+        }  
     }
 }
-
-
 
 
 
@@ -203,17 +212,13 @@ public class asignment2Solution
            System.out.println("Graph is connected");
         else
            System.out.println("Graph is not connected");
-
-
-
-
   
            // Directed Grap
            System.out.println("****************");
            System.out.println("*WEIGHTED GRAPH*");
            System.out.println("****************\n");
            
-           System.out.print("Enter no. of vertices : ");
+          System.out.print("Enter no. of vertices : ");
            n = scan.nextInt();
                       
            weightedGraph = new WeightedGraph(n);
@@ -222,7 +227,11 @@ public class asignment2Solution
 
            System.out.println("Adjacency Matrix is as follows : ");
            weightedGraph.display();
-           weightedGraph.isConnected();
+           
+           if(weightedGraph.isConnected())
+            System.out.println("Graph is connected");
+           else
+               System.out.println("Graph is not connected");
            weightedGraph.shortestPath();
     }
 }
