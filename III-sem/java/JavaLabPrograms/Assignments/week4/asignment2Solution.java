@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 class Graph
 {
-	protected int adjacencyMatrix[][];
+	protected int Matrix[][];
     
     Graph()
 	{
@@ -21,12 +21,12 @@ class Graph
 
         System.out.print("Enter no. of vertices : ");
         n = scan.nextInt();
-        adjacencyMatrix = new int[n][n];
+        Matrix = new int[n][n];
     }
     
 	Graph(int n)        // no of vextex
 	{
-		adjacencyMatrix = new int [n][n];   // by default its initialized to 0
+		Matrix = new int [n][n];   // by default its initialized to 0
     }
 
     public void input()
@@ -34,16 +34,16 @@ class Graph
         Scanner scan = new Scanner(System.in);
 
  
-        for(int i = 0 ; i < adjacencyMatrix.length ; i++)
+        for(int i = 0 ; i < Matrix.length ; i++)
         {
-            for(int j = 0 ; j < adjacencyMatrix.length ; j++)
+            for(int j = 0 ; j < Matrix.length ; j++)
             {
                 if(i == j)
-                    adjacencyMatrix[i][j] = 0;
+                    Matrix[i][j] = 0;
                 else
                 {
                     System.out.print("V(" + (i + 1) + ", " + (j + 1) + ") : ");
-                    adjacencyMatrix[i][j] = scan.nextInt();
+                    Matrix[i][j] = scan.nextInt();
                 }
             }
             System.out.println();
@@ -52,26 +52,26 @@ class Graph
 
 	public void display()
 	{
-		for(int i = 0 ; i < adjacencyMatrix.length; i++)
+		for(int i = 0 ; i < Matrix.length; i++)
 		{
-			for( int j = 0 ; j < adjacencyMatrix.length; j++)
-				System.out.print(adjacencyMatrix[i][j] + " ");
+			for( int j = 0 ; j < Matrix.length; j++)
+				System.out.print(Matrix[i][j] + " ");
 	        System.out.println();
 		}
 	}
 
 	public boolean isConnected()
     {  
-        int temp[][] = new int[adjacencyMatrix.length][adjacencyMatrix.length];
+        int temp[][] = new int[Matrix.length][Matrix.length];
             // copy 
         for(int i = 0 ; i < temp.length ; i++)
             for(int j = 0 ; j < temp.length ; j++)
-                temp[i][j] = adjacencyMatrix[i][j];
+                temp[i][j] = Matrix[i][j];
 
         for(int k = 0 ; k < temp.length ; k ++)
             for(int i = 0 ; i < temp.length ; i++)
                 for(int j = 0 ; j < temp.length ; j++)
-                    if(temp[i][k] == 1 && temp[k][j] == 1)
+                    if(temp[i][k] > 0 && temp[k][j] > 0)
                         temp[i][j] = 1;
    
         for(int i = 0 ; i < temp.length ; i++)
@@ -96,13 +96,13 @@ class DirectedGraph extends Graph
 
 	public int[] indegree()
 	{
-        int sum, degree[] = new int[adjacencyMatrix.length];
+        int sum, degree[] = new int[Matrix.length];
 
-		for(int i = 0 ; i < adjacencyMatrix.length; i++)
+		for(int i = 0 ; i < Matrix.length; i++)
 		{
 			sum = 0;
-            for( int j = 0 ; j < adjacencyMatrix.length; j++)
-                sum += adjacencyMatrix[j][i];                //sum of cols
+            for( int j = 0 ; j < Matrix.length; j++)
+                sum += Matrix[j][i];                //sum of cols
             degree[i] = sum;
         }
         
@@ -112,18 +112,55 @@ class DirectedGraph extends Graph
 	
 	public int[] outdegree()
 	{
-        int sum, degree[] = new int[adjacencyMatrix.length];
+        int sum, degree[] = new int[Matrix.length];
 
-		for(int i = 0 ; i < adjacencyMatrix.length; i++)
+		for(int i = 0 ; i < Matrix.length; i++)
 		{
 			sum = 0;
-            for( int j = 0 ; j < adjacencyMatrix.length; j++)
-                sum += adjacencyMatrix[i][j];                 //sum of rows
+            for( int j = 0 ; j < Matrix.length; j++)
+                sum += Matrix[i][j];                 //sum of rows
             degree[i] = sum;
         }   
         return degree;
     }
 }
+
+
+class WeightedGraph extends Graph
+{
+    WeightedGraph(int n)
+    {
+        super(n);
+    }
+
+    public void shortestPath()
+    {
+        int temp[][] = new int[Matrix.length][Matrix.length];
+            // copy 
+        for(int i = 0 ; i < temp.length ; i++)
+            for(int j = 0 ; j < temp.length ; j++)
+                temp[i][j] = Matrix[i][j];
+
+
+        for(int k = 0 ; k < temp.length ; k ++)
+            for(int i = 0 ; i < temp.length ; i++)
+                for(int j = 0 ; j < temp.length ; j++)
+                    if(temp[i][k] == 1 && temp[k][j] == 1)
+                        temp[i][j] = 1;
+   
+
+        for(int i = 0 ; i < temp.length ; i++)
+             for(int j = 0 ; j < temp.length ; j++)
+                    if(temp[i][j] == 0)
+                        return false; 
+          return true;
+        
+    }
+}
+
+
+
+
 
 public class asignment2Solution
 {
@@ -131,6 +168,8 @@ public class asignment2Solution
 	{
 		Scanner scan = new Scanner(System.in);
 		DirectedGraph directedGraph;
+        WeightedGraph weightedGraph;
+
         int n;
         int degree[];
 
@@ -166,21 +205,24 @@ public class asignment2Solution
            System.out.println("Graph is not connected");
 
 
-/*
-        System.out.println("****************");
-        System.out.println("*WEIGHTED GRAPH*");
-        System.out.println("****************\n");
 
-        System.out.print("Enter no. of vertices : ");
-        n = scan.nextInt();
-        
-        
-        weightedGraph = new WeightedGraph(n);
-        System.out.println("Press W(V(i, j)) iif they are adjacent otherwise -1:\n");
-        weightedGraph.input();
 
-        System.out.println("Adjacency Matrix is as follows : ");
-        weightedGraph.display();
-*/
-	}
+  
+           // Directed Grap
+           System.out.println("****************");
+           System.out.println("*WEIGHTED GRAPH*");
+           System.out.println("****************\n");
+           
+           System.out.print("Enter no. of vertices : ");
+           n = scan.nextInt();
+                      
+           weightedGraph = new WeightedGraph(n);
+           System.out.println("Press W(v(i,j)) iff they are adjacent otherwise 0\n");
+           weightedGraph.input();
+
+           System.out.println("Adjacency Matrix is as follows : ");
+           weightedGraph.display();
+           weightedGraph.isConnected();
+           weightedGraph.shortestPath();
+    }
 }
