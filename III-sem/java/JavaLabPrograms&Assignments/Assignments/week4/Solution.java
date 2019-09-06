@@ -9,11 +9,9 @@
   Write a Test program to demonstrate the working of all the three classes in your main program.
 */
 import java.util.Scanner;
-
 class Graph
 {
 	protected int Matrix[][];
-    
     Graph()
 	{
         Scanner scan = new Scanner(System.in);
@@ -32,7 +30,6 @@ class Graph
     public void input()
     {
         Scanner scan = new Scanner(System.in);
-
  
         for(int i = 0 ; i < Matrix.length ; i++)
         {
@@ -109,7 +106,6 @@ class DirectedGraph extends Graph
         return degree;
     }
     
-	
 	public int[] outdegree()
 	{
         int sum, degree[] = new int[Matrix.length];
@@ -125,7 +121,6 @@ class DirectedGraph extends Graph
     }
 }
 
-
 class WeightedGraph extends Graph
 {
     WeightedGraph(int n)
@@ -135,41 +130,42 @@ class WeightedGraph extends Graph
 
     public void shortestPath()
     {
+        //########################### Copied from  Moin Khan #######################
         int temp[][] = new int[Matrix.length][Matrix.length];
             // copy 
         for(int i = 0 ; i < temp.length ; i++)
             for(int j = 0 ; j < temp.length ; j++)
                if(Matrix[i][j] == 0 && i != j)
-                  temp[i][j] = 50000;  //infinity
+                  temp[i][j] = 500000;  //infinity // high weight if no edge between non-diagonal vertices
                 else
-                  temp[i][j] = Matrix[i][j];
+                  temp[i][j] = Matrix[i][j];                  
 
-                  
 
-        for (int k = 0; k < Matrix.length; k++){  
-        for (int i = 0; i < Matrix.length; i++){  
-            for (int j = 0; j < Matrix.length; j++)  
+        for (int k = 0; k < Matrix.length; k++)
+        {  
+            for (int i = 0; i < Matrix.length; i++)
             {  
-                if (temp[i][k] + temp[k][j] < temp[i][j])  
-                    temp[i][j] = temp[i][k] + temp[k][j];  
+                for (int j = 0; j < Matrix.length; j++)  
+                {  
+                    if (temp[i][k] + temp[k][j] < temp[i][j])  
+                        temp[i][j] = temp[i][k] + temp[k][j];  
+                }  
             }  
-        }  
-       }
+        }
 
        System.out.println("Shortest path between vertices is : ");
        for (int i = 0; i < Matrix.length; i++)
        {  
             for (int j = 0; j < Matrix.length; j++)
-            if(temp[i][j] == 50000)
+              if(temp[i][j] == 50000)
                 System.out.print("0\t");
-            else
+              else
                 System.out.print(temp[i][j]+"\t");
             System.out.println();
-        }  
+        }
+        //##########################################################################
     }
 }
-
-
 
 public class asignment2Solution
 {
