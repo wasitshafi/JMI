@@ -167,7 +167,7 @@ class WeightedGraph extends Graph
     }
 }
 
-public class asignment2Solution
+public class Solution
 {
 	public static void main(String []args)
 	{
