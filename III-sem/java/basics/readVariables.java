@@ -4,26 +4,35 @@ class readVariables{
     	
     	Scanner input = new Scanner(System.in);
     	
-    	// Getting float input
-    	System.out.print("Enter integer: ");
+    	// float input
+    	System.out.print("Enter integer : ");
     	int i = input.nextInt();
 
-    	// Getting float input
-    	System.out.print("Enter float: ");
+    	// float input
+    	System.out.print("Enter float : ");
     	float f = input.nextFloat();
     	
-    	// Getting double input
-    	System.out.print("Enter double: ");
+    	// double input
+    	System.out.print("Enter double : ");
     	double d = input.nextDouble();
-    	
+		
+		// we can also clear the input buffer buffer before reading character line 'input.nextLine();'
+	
+		// char input
+		System.out.print("Enter character : ");
+		// input.nextLine(); 
+		char ch = input.next().charAt(0); // java does't have any function nextChar() to read single character so we have to use that alternative
+		
     	// Getting String input
     	System.out.print("Enter string: ");
 
-        String s = input.next(); // it not read strings with spaces
+		String s = input.next(); // it not read strings with spaces // user nextLin() to read string with spaces
+		
 
-    	System.out.println("Entered integer is : " + i);
+    	System.out.println("\n\nEntered integer is : " + i);
     	System.out.println("Entered float is : " + f);
     	System.out.println("Entered double is : " + d);
-        System.out.println("Entered string is : " + s);
+		System.out.println("Entered character is : " + ch);
+		System.out.println("Entered string is : " + s);
     }
 }
