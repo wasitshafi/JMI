@@ -11,7 +11,6 @@
 #include<math.h>
 #include<limits.h>
 
-
 void check_prime(int num)
 {
 	int i, is_prime = 1;
@@ -20,11 +19,10 @@ void check_prime(int num)
 	{
 		if( num % i == 0 )
 		{
-		 is_prime = 0;
-		 break;
-    }
+ 		  is_prime = 0;
+ 		  break;
+        }
 	}
-
 	if(is_prime) printf("%d\t", num);
 }
 
@@ -32,13 +30,13 @@ int main()
 {
 	int num, i = 1;
 
-  do{
+    do{
 	    printf("\nEnter a positive Non-Zero integer( HINT : 1 < N < %d ):\t", INT_MAX);
 	    scanf("%d", &num);
 
 	    if( num < 1 || num > INT_MAX )
  	    printf("\nInvalid input...! Try Again");
-    }while( num < 1 || num > INT_MAX );
+      }while( num < 1 || num > INT_MAX );
 
 	printf("\nPrime divisors of %d are:\t", num);
 

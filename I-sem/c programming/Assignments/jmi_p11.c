@@ -7,32 +7,34 @@
 
 int main()
 {
-  long int num, temp;
-  short int key, rem, count = 0;
+    long int num, numCopy;
+    short int key, rem, count = 0;
 
-  printf("\nEnter a number:\t");
-  scanf("%ld", &num);
+    printf("Enter a number : ");
+    scanf("%ld", &num);
+    numCopy = num;
+    do{
+        printf("Enter a key digit : ");
+        scanf("%d", &key);
 
-  do{
-      printf("\nEnter a key digit:\t");
-      scanf("%hd", &key);
+        if( key < 0 || key > 9 )
+          printf("\nInvalid Input...! Try Again.");
 
-      if( key < 0 || key > 9 )
-        printf("\nInvalid Input...! Try Again.");
+      }while( key < 0 || key > 9 );
 
-    }while( key < 0 || key > 9 );
+    while(numCopy)
+    {
+      rem = numCopy % 10;
+      if(rem == key) count++;
+      numCopy = numCopy / 10;
+    }
 
-  temp = num;
-  while(num)
-  {
-   rem = num % 10;
-     if(rem == key) count++;
-   num = num / 10;
-  }
-  if( count != 0 )
-   printf("\n%hd occurs %hd times in %ld.\n", key, count, temp);
-  else
-   printf("\n%hd does't occur in %ld.\n", key, temp);
+    printf("value of num is %d", num);
 
-  return 0;
+    
+    if( count != 0 )
+      printf("\n%hd occurs %hd times in %ld.\n", key, count, num);
+    else
+      printf("\n%hd does't occur in %ld.\n", key, num);
+    return 0;
 }

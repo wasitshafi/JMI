@@ -8,14 +8,13 @@
 
 int main()
 {
- float r;
-  
- printf("\nEnter radius :\t");
- scanf("%f", &r);
- 
- printf("\n\nDiameter = %.2f", r * 2);
- printf("\nArea = %.2f", PI * r * r);
- printf("\nCricumference = %.2f",  2 * PI * r);
- 
- return 0;
+    float r;
+    
+    printf("\nEnter radius :\t");
+    scanf("%f", &r);
+    
+    printf("\n\nDiameter = %.2f", r * 2);
+    printf("\nArea = %.2f", PI * r * r);
+    printf("\nCricumference = %.2f",  2 * PI * r);
+    return 0;
 }

@@ -12,10 +12,10 @@ int main()
 
   do{
 	   printf("\nEnter the order of matrix(n):\t");
-  	 scanf("%d", &order);
+  	   scanf("%d", &order);
 
-		 if( order < 1 ) printf("\nInvalid Input...! Try Again.");
-	 }while( order < 1 );
+	   if( order < 1 ) printf("\nInvalid Input...! Try Again.");
+	}while( order < 1 );
 
 	first_row = 0;
 	first_col = 0;
@@ -28,12 +28,12 @@ int main()
      for( i = first_col ; i <=  last_col ; i++ )
 	    arr[first_row][i] = num++; //printing first row
 
-   first_row++;
+     first_row++;
 
      for( i = first_row ; i <=  last_row ; i++ )
   	  arr[i][last_col] = num++;  //printing last col
 
-   last_col--;
+     last_col--;
 
      for( i = last_col ; i >=  first_col ; i-- )
   	  arr[last_row][i]  = num++;//printing last row
@@ -44,16 +44,15 @@ int main()
   	  arr[i][first_col] = num++;//printing first col
 
 	 first_col++;
-  }
+    }
 
   printf("\nCircular matrix is as follows:\n\n");
 
   for( i = 0 ; i < order; i++ )
   {
  	  for( j = 0 ; j < order ; j++)
-	   printf("%d\t", arr[i][j]);
- 	 printf("\n");
+	    printf("%d\t", arr[i][j]);
+ 	  printf("\n");
   }
-
  return 0;
 }

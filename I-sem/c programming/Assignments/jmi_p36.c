@@ -29,7 +29,7 @@ void get_dimensions_for_multiplication( int *rows1, int *cols1, int *rows2, int 
   if( *cols1 != *rows2 )
 	{
 		printf("\nMultiplication not Possible...!");
-	  exit(EXIT_FAILURE);
+ 	    exit(EXIT_FAILURE);
 	}
 }
 
@@ -67,9 +67,9 @@ void add_or_sub_matrix(int *arr1, int *arr2, int *arr3, int rows, int cols, int 
   for( i = 0 ; i < rows * cols ; i++ )
   {
 	 if(choice == 1 )
-	 arr3[i] = arr1[i] + arr2[i];
-   else
-   arr3[i] = arr1[i] - arr2[i];
+	   arr3[i] = arr1[i] + arr2[i];
+     else
+       arr3[i] = arr1[i] - arr2[i];
   }
 }
 
@@ -78,7 +78,7 @@ void multiply_matrix( int *arr1, int *arr2, int *arr3, int rows1, int cols1, int
 	int i, j, k, sum;
 
 	for( i = 0 ; i < rows1 ; i++ )
-	  {
+	{
 	   for( j = 0 ; j < cols2 ; j++ )         /*computing matrix multiplication*/
 	    {
 	      sum = 0;
@@ -86,9 +86,9 @@ void multiply_matrix( int *arr1, int *arr2, int *arr3, int rows1, int cols1, int
 	      {
 			   sum += *(arr1 + i * cols1 + k) * ( *(arr2 + k * cols2 + j) );
 			   *(arr3 + i * cols3 + j) = sum;
-		    }
+		  }
 	    }
-	  }
+	}
 }
 
 void put_matrix(int *arr1, int rows, int cols, char ch)
@@ -135,7 +135,7 @@ int main()
 	  cols3 = cols2;
 	}
 
-  get_matrix( arr1, arr2, rows1, cols1, rows2, cols2 );
+    get_matrix( arr1, arr2, rows1, cols1, rows2, cols2 );
 
 	if(choice == 1 || choice == 2)
 		add_or_sub_matrix(arr1, arr2, arr3, rows1, cols1, choice);
@@ -143,16 +143,16 @@ int main()
 		multiply_matrix( arr1, arr2, arr3, rows1, cols1, rows2, cols2, rows3, cols3 );
 
 	put_matrix(arr1, rows1, cols1, 'A');
-  put_matrix(arr2, rows2, cols2, 'B');
+    put_matrix(arr2, rows2, cols2, 'B');
 
 	if(choice == 1)
-	 printf("\n\nMatrix \'C\' = \'A\' + \'B\' : \n");
+	  printf("\n\nMatrix \'C\' = \'A\' + \'B\' : \n");
 	else if(choice == 2)
-	 printf("\n\nMatrix  \'C\' = \'A\' - \'B\' is : \n");
+	  printf("\n\nMatrix  \'C\' = \'A\' - \'B\' is : \n");
 	else
-	 printf("\n\nMatrix  \'C\' = \'A\' * \'B\' is : \n");
+	  printf("\n\nMatrix  \'C\' = \'A\' * \'B\' is : \n");
 
-	 put_matrix(arr3, rows3, cols3, 'C');
+	put_matrix(arr3, rows3, cols3, 'C');
 
 	return 0;
 }

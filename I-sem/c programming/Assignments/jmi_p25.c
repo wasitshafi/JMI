@@ -16,10 +16,10 @@ int main()
 {
   int num1, num2;
 
- 	printf("\nEnter num1:\t");
+ 	printf("Enter num1:\t");
   scanf("%d", &num1);
 
-	printf("\nEnter num2:\t");
+	printf("Enter num2:\t");
 	scanf("%d", &num2);
 
   printf("\nGCD of %d and %d is %d.", num1, num2, gcd(num1, num2) );

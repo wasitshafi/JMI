@@ -1,20 +1,20 @@
 //
 //jmi_p21.c on 17-08-18
 //
-//programe to compute length of string using recursion
+//program to compute length of string using recursion
 #include<stdio.h>
 #include<string.h>
 
 int my_strlen(char* ch)
 {
-  static int len = 0;
+    static int len = 0;
 
 	if(!*ch)    // or if( *ch == '\0' )
-	 return len;
+	  return len;
 	else
 	{
-	 len++;
-	 my_strlen(ch + 1);
+	  len++;
+	  my_strlen(ch + 1);
 	}
 }
 
@@ -25,7 +25,7 @@ int main()
 	printf("\nEnter a string:");
 	scanf("%[^\n]", str);
 
-  printf("\nString lenght = %d", my_strlen(str));
+    printf("\nString lenght = %d", my_strlen(str));
 
 	return 0;
 }

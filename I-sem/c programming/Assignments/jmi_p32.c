@@ -30,11 +30,11 @@ int main()
 	while(low <= high)
 	{
  	 mid = ( low + high ) / 2;
-   if(item > arr[mid])
+     if(item > arr[mid])
 		low = mid + 1;
 	 else if(item < arr[mid])
 		high = mid - 1;
-   else
+     else
 	 {
 		printf("Search sucessful.");
 		return 0;

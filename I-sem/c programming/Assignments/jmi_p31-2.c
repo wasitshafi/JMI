@@ -1,6 +1,6 @@
 //jmi_p31-2.c
 //
-//programe to search an element using linear search
+//program to search an element using linear search
 //
 #include<stdio.h>
 
@@ -39,7 +39,7 @@ int main()
 	   if(flag)
 	 	  printf(", %d", i + 1);
 	 }
-  }
+    }
 	printf(".");
 
 	if(i > n)

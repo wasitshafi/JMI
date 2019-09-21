@@ -10,11 +10,11 @@ int main()
  char ch;
 
  printf("\nEnter a character:\t");
- ch = getche();
-                                      //You can also use type casting for these by :
- printf("\n\nDecimal = %d", ch);      // printf("\n\nDecimal = %d", (int) ch);
- printf("\nOctal = %o", ch);          // printf("\nOctal = %o", (int)ch);
- printf("\nHexa-deciaml = %X", ch);   // printf("\nOctal = %o", (int)ch);
+ scanf("%d", &ch);
+                   //You can also use type casting for these by :
+ printf("\nDecimal      = %d", ch);        // printf("\n\nDecimal = %d", (int) ch);
+ printf("\nOctal        = %o", ch);        // printf("\nOctal = %o", (int)ch);
+ printf("\nHexa-deciaml = %X", ch);        // printf("\nOctal = %o", (int)ch);
 
  return 0;
 }

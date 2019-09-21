@@ -1,7 +1,7 @@
 //
 //jmi_p23 on 27-08-18
 //
-//programe to print pascal triangle using recursion
+//program3 to print pascal triangle using recursion
 
 #include<stdio.h>
 #include<assert.h>
@@ -29,10 +29,8 @@ int main()
   for( i = 0 ; i < lines ; i++ )
   {
   	  for( j = 0 ; j <= lines - i ; j++ ) printf(" ");
-
   	  for(j = 0 ; j <= i ; j++ ) printf("%ld ", nCr(i, j) );
-
- 	  printf("\n");
+	    printf("\n");
   }
  return 0;
 }

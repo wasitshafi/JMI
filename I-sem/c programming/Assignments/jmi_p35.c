@@ -11,9 +11,9 @@ int main()
 
 	do{
 	   printf("\nEnter no of elements:\t");
-   	 scanf("%d", &n);
+   	   scanf("%d", &n);
 
-		 if( n < 1 ) printf("\nInvalid Input...! Try Again.");
+	   if( n < 1 ) printf("\nInvalid Input...! Try Again.");
 	  }while( n < 1 );
 
 	int arr[n];
@@ -27,10 +27,10 @@ int main()
 	{
 	  for(j = 0 ; j < n - i - 1 ; j++)
 	  {
-		 if( arr[j] > arr[j+1] )
+	   if( arr[j] > arr[j+1] )
 	   {
-	    temp =  arr[j];
-	    arr[j] = arr[j+1];
+	      temp =  arr[j];
+	      arr[j] = arr[j+1];
 		  arr[j + 1] = temp;
 	   }
 	  }

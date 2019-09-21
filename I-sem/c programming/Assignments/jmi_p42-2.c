@@ -11,7 +11,7 @@ int main()
 	char str[100];
 
 	printf("\nEnter string:\t");
-  scanf("%[^\n]", str);
+    scanf("%[^\n]", str);
 	len = strlen(str);
 
 	for(i = 0 ; i < len ; i++)
@@ -26,13 +26,13 @@ int main()
      {
       flag = 0;
       continue;
-	   }
+	 }
 
 	 freq = 0;  // compute  frequency
 	 for(j = i; j < len; j++)
 	   if(str[i] == str[j]) freq++;
 
-   printf("\nFrequency of \'%c\' is :\t%d.", str[i], freq);
+     printf("\nFrequency of \'%c\' is :\t%d.", str[i], freq);
 	}
 	return 0;
 }

@@ -7,23 +7,21 @@
 
 int main()
 {
- char ch;
- int num;
+    char ch;
+    int num;
 
- do{
+    do{
+        printf("Enter a character ( 0 - 9 ) : ");
+        scanf("%c", &ch);
 
- printf("\n\nEnter a character ( 0 - 9 ):\t");
- ch = getche();
+        if( ch < 48 || ch > 57 ) printf("Invalid input (NaN)...! Try again.\n");
+      }while( ch < 48 || ch > 57 );
 
- if( ch < 48 || ch > 57 ) printf("\nInvalid input ( NaN )...! Try again.");
+    num = ch - '0';  // or num = ch - '48'
 
- }while( ch < 48 || ch > 57 );
+    printf("\nDecimal      = %d", num);
+    printf("\nOctal        = %o", num);
+    printf("\nHexa-deciaml = %x", num);  // use %X to print in upper case
 
- num = ch - '0';  // or num = ch - '48'
-
- printf("\nDecimal = %d", num);
- printf("\nOctal = %o", num);
- printf("\nHexa-deciaml = %x", num);  // use %X to print in upper case
-
- return 0;
+    return 0;
 }

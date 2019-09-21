@@ -7,25 +7,25 @@
 
 int main()
 {
- long int num, reverse, temp, rem;
+    long int num, numCopy, reverse, rem;
 
- printf("\nEnter a number:\t");
- scanf("%ld", &num);
+    printf("Enter a number : ");
+    scanf("%ld", &num);
 
- temp = num;
- reverse = 0;
+    numCopy = num;
+    reverse = 0;
 
- while(temp) // or while(temp != 0 )
- {
-  rem = temp % 10;
-  reverse = ( reverse * 10 ) + rem;
-  temp = temp / 10;
- }
+    while(numCopy) // or while(temp != 0 )
+    {
+        rem = numCopy % 10;
+        reverse = ( reverse * 10 ) + rem;
+        numCopy = numCopy / 10;
+    }
 
- if(num == reverse)
-  printf("\n%ld is palindrome.\n", reverse);
- else
-  printf("\n%ld is not palindrome.\n", reverse);
+    if(num == reverse)
+        printf("\n%ld is palindrome.", reverse);
+    else
+        printf("\n%ld is not palindrome.", reverse);
 
- return 0;
+    return 0;
 }

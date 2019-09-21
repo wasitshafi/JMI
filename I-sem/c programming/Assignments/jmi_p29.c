@@ -9,20 +9,19 @@
 int check_palindrome(char *str, int start, int end)
 {
 	if( start >= end )
-	 return 1;
+	  return 1;
 	else if( str[start] != str[end] )
-   return 0;
-  else
-   check_palindrome(str, ++start, --end);
+      return 0;
+    else
+      check_palindrome(str, ++start, --end);
 }
 
 int main()
 {
 	int len, start, end, is_palindrome = 1;
-
 	char str[100];
 
-	printf("\nEnter string:\t");
+	printf("Enter string:\t");
 	scanf("%[^\n]", str);
 
 	len = strlen(str);

@@ -22,21 +22,21 @@ int main()
 		printf("\nEnter gross sales of employee %d :", i + 1 );
 		scanf("%d", &gross_sales[i]);
 
-	   net_salary[i] = 1000 +  ( gross_sales[i] * 9 ) / 100;
-     if(net_salary[i] < 1200) count_below_12h++;
-     else if( net_salary[i] >= 1200 && net_salary[i] <= 1299 ) count_12h++;
-     else if( net_salary[i] >= 1300 && net_salary[i] <= 1399 ) count_13h++;
-     else if( net_salary[i] >= 1400 && net_salary[i] <= 1499 ) count_14h++;
-     else if( net_salary[i] >= 1500 && net_salary[i] <= 1599 ) count_15h++;
-     else if( net_salary[i] >= 1600 && net_salary[i] <= 1699 ) count_16h++;
-     else if( net_salary[i] >= 1700 && net_salary[i] <= 1799 ) count_17h++;
-     else if( net_salary[i] >= 1800 && net_salary[i] <= 1899 ) count_18h++;
-     else if( net_salary[i] >= 1900 && net_salary[i] <= 1999 ) count_19h++;
-     else if( net_salary[i] >= 2000 )count_20h_and_above++;
+	    net_salary[i] = 1000 +  ( gross_sales[i] * 9 ) / 100;
+		if(net_salary[i] < 1200) count_below_12h++;
+		else if( net_salary[i] >= 1200 && net_salary[i] <= 1299 ) count_12h++;
+		else if( net_salary[i] >= 1300 && net_salary[i] <= 1399 ) count_13h++;
+		else if( net_salary[i] >= 1400 && net_salary[i] <= 1499 ) count_14h++;
+		else if( net_salary[i] >= 1500 && net_salary[i] <= 1599 ) count_15h++;
+		else if( net_salary[i] >= 1600 && net_salary[i] <= 1699 ) count_16h++;
+		else if( net_salary[i] >= 1700 && net_salary[i] <= 1799 ) count_17h++;
+		else if( net_salary[i] >= 1800 && net_salary[i] <= 1899 ) count_18h++;
+		else if( net_salary[i] >= 1900 && net_salary[i] <= 1999 ) count_19h++;
+		else if( net_salary[i] >= 2000 )count_20h_and_above++;
 	}
 
 	for( i = 0 ; i < no_of_salesperson ; i++ )
-		 printf("\nSalary of salesman %d is %d.", i + 1, net_salary[i] );
+		printf("\nSalary of salesman %d is %d.", i + 1, net_salary[i] );
 
 	printf("\n\n");
 	printf("\nTotal no of salespersons who's salary is below 1200  is %d.", count_below_12h);

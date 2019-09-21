@@ -7,17 +7,16 @@
 
 int main()
 {
- int i, j, lines;
+    int i, j, lines;
 
- printf("\nEnter no of lines you want:\t");
- scanf("%d", &lines);
+    printf("Enter no of lines you want : ");
+    scanf("%d", &lines);
 
- for(i = 1; i <= lines; i++)
- {
-    for(j = i; j <= i * 3; j = j + i)
-      printf("%d\t", j);
-
-  printf("\n");
- }
- return 0;
+    for(i = 1; i <= lines; i++)
+    {
+        for(j = i; j <= i * 3; j = j + i)
+          printf("%d\t", j);
+      printf("\n");
+    }
+    return 0;
 }
