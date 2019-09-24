@@ -34,12 +34,33 @@ select onum as "ID", amount as "Amount", odate as "Order Date", cnum as "N0. Of 
 
 insert into orders values(:Enter_ID, :Enter_Amount, :Enter_Order_Date, :Enter_No_Of_Orders, :Enter_Number_Of_Salesman);
 
+--a
+select snum as "Salesman Id", max(amount) as "Amount" from orders group by snum having snum in( 1002, 1007)
+
 --b
 select count(odate) as "Total" from orders where odate ='03-Oct-1997'
-
 
 --c
 select sum(amount) as "Total" from orders;
 
 --d
 select avg(amount) as "Average" from orders;
+
+--e
+
+############no working properly
+select count(*) as "Total" from orders group by odate having odate = to_date(sysdate, 'dd-Mon-YYYY')
+###########################
+
+--f
+select snum as "Salesman ID", odate as "Order Date", max(amount) as "Maximum Amount" from orders group by snum, odate
+
+--g
+
+--h
+select count (*) from (select distinct city from customers where city is not null);
+
+--j
+select cnum as "Customer ID", min(amount) as "Min. Order Amount" from orders group by cnum;
+
+--k

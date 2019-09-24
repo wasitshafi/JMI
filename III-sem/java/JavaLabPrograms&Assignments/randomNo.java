@@ -13,8 +13,8 @@ public class randomNo{
         // https://www.geeksforgeeks.org/generating-random-numbers-in-java/
 
         Random r = new Random();
-        System.out.println("r.nextInt() is : " + r.nextInt());
-        System.out.println("r.nextInt(50) is : " + r.nextInt(50));  // Here 50 is exclusive. i.e range is 0-49.
+        System.out.println("r.nextInt() is : " + r.nextInt()); // any random number
+        System.out.println("r.nextInt(50) is : " + r.nextInt(50));  // Here 50 is exclusive. i.e range is 0 <= n < 50
                                                                     // nextInt() is the only function that takes arguments.
         System.out.println("r.nextLong() is : " + r.nextLong());
         System.out.println("r.nextFloat() is : " + r.nextFloat());
