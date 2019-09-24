@@ -48,8 +48,6 @@ int main()
 	result = num * x;
 
 	storeResultInArray(arr, sizeof(arr) / sizeof(arr[0]) - 1, result);
-    cout << endl << "x = " << x  << endl;
-
     cout << num  << " * " << x  << " = "; printResult(arr, sizeof(arr) / sizeof(arr[0]) - 1);
 	
 	return 0;
