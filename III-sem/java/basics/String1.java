@@ -1,10 +1,10 @@
 //
-//string.java
+//String1.java
 //
 //program to show basic build in methods of String datatype
 //
 import java.util.Scanner;
-public class string
+public class String1
 {
     public static void main(String a[])
     {
@@ -17,7 +17,7 @@ public class string
         System.out.println("String in uppercase : " + str.toUpperCase());
         System.out.println("String in lowercase : " + str.toLowerCase());
         
-        System.out.print("\n\nEnter substring to be searched : ");
+        System.out.print("\nEnter substring to be searched : ");
         subStr = s.nextLine();
         int index = str.indexOf(subStr);
         if(index >= 0)
@@ -25,10 +25,10 @@ public class string
         else
             System.out.println("subString not found...");
         
-        System.out.print("\n\nEnter string to be appended with main string: ");
+        System.out.print("\nEnter string to be appended with main string: ");
         str2 = s.nextLine();
 
         str = str.concat(str2);
-        System.out.println("\n\nString is as : "  + str);
+        System.out.println("\nString is as : "  + str);
     }
 }
