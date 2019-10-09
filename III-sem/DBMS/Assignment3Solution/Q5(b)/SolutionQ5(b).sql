@@ -1,5 +1,3 @@
-select pname "Programmer", title "Software", dcost "MAx Cost" from software where (pname, dcost) in (select pname, max(dcost) from software group by pname);
-
 select * from salesmen;
 select * from customers;
 select * from orders;

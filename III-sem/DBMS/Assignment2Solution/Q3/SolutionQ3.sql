@@ -126,10 +126,10 @@ select pname "Name", dob as "DOB", DOJ as "DOJ", upper(sex) as "Sex", (prof1 || 
 select count(*) as "Total Female Programmers" from programmer where sex = 'f';
 
 --27
-select prof1 as "Male Programmer's Language" from programmer where sex = 'm' union select prof2 from programmer where sex = 'm'
+select prof1 as "Male Programmer's Language" from programmer where sex = 'm' union select prof2 from programmer where sex = 'm';
 
 --28
-select avg(sal) as "Average Salary"  from programmer
+select avg(sal) as "Average Salary"  from programmer;
             --or
 select (sum(sal)/count(sal)) as "Average Salary" from programmer
 
@@ -140,6 +140,7 @@ select  count (*)  as "Total" from programmer where sal between 5000 - 1 and 750
 select pname "Name", dob as "DOB", DOJ as "DOJ", upper(sex) as "Sex", prof1  as "Proficiency1" , prof2 as "Proficiency2" from programmer where prof1 not in('c', 'c++', 'Pascal') and  prof2 not in('c', 'c++', 'Pascal')
 
 --31
+select pname "Programmer", title "Software", dcost "MAx Cost" from software where (pname, dcost) in (select pname, max(dcost) from software group by pname);
 
 --32
 select 'Mr.' || initcap(pname) || ' - has ' || floor(( (sysdate - dob) / 365) * 10 )/10 || ' years of experience.' as "Detalis" from programmer where sex = 'm' union select 'Ms.' || initcap(pname) || ' - has ' || floor(( (sysdate - dob) / 365) * 10 )/10 || ' years of experience.' as "Detalis" from programmer where sex = 'f'

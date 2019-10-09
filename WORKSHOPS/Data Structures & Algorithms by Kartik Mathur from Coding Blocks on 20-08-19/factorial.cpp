@@ -11,7 +11,7 @@ long int factorial(long int n)
     if(n == 0 || n == 1)
         return n;
     else
-     return n * factorial( n - 1);
+     return n * factorial(n - 1);
 }
 
 int main()

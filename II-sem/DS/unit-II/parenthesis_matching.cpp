@@ -2,7 +2,7 @@
 //
 //Program to Check for balanced parenthesis in an expression
 //
-
+// TIP : There is other method to solve this problem i.e either user STL(Stack) or it can also be done using just a count variable(Refer : )
 #include<iostream>
 
 using namespace std;
@@ -44,8 +44,8 @@ public:
           isbalanced = 0;//eg (1+(2+(3+4)+5)+6)+7)+----here after 7 when reading ')' makes it unbalanced by checking value of tos = -1
           break;
         }
-        if(stack[tos] == '(')
-         tos--;
+        //if(stack[tos] == '(') // no need to write this if condition as upto this point we know that stack contains some '(' & we also know that we only pushes '(' into stack. Therefore we can decrement tos  directly
+         tos--; 
        }
      }
   if(tos >= 0 || isbalanced == 0)
