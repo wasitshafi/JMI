@@ -2,7 +2,7 @@
 //
 //Program to Check for balanced parenthesis in an expression
 //
-// TIP : There is other method to solve this problem i.e either user STL(Stack) or it can also be done using just a count variable(Refer : )
+// TIP : There is other method to solve this problem i.e either user STL(Stack) or it can also be done using just a count variable(Refer : https://github.com/wasitshafi/JMI-MCA/blob/master/II-sem/DS/unit-II/parenthesis_matching_without_stack.cpp )
 #include<iostream>
 
 using namespace std;
