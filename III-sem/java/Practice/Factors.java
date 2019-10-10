@@ -1,4 +1,4 @@
-import  static java.lang.Math.sqrt;
+import static java.lang.Math.sqrt;
 import java.util.Scanner;
 public class Factors
 {
