@@ -4,13 +4,11 @@ public class arrays{
     {
         int n;
         int arr[]; // declaration
-
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter no. of elements : ");
         n = scan.nextInt();
-        arr = new int[n]; // instantiation
-        
+        arr = new int[n]; // instantiation        
 
         // alternate methods
         // int arr[] = new int[n];   // declaration & instantiation.
