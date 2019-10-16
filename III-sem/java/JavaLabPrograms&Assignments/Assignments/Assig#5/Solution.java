@@ -2,6 +2,38 @@ import java.util.Random;
 import java.util.Arrays;
 import java.util.Scanner;
 
+class MyComplex
+{
+    private int real, img;
+    MyComplex()
+    {
+        int min = -50;
+        int max =  50;
+        Random r = new Random();
+
+        real = r.nextInt(max - min) + min;
+        img  = r.nextInt(max - min) + min;
+    }
+    public void printElement()
+    {    
+
+        if(real == 0 && img == 0)
+            System.out.print("0");
+        else if(img == 0)
+            System.out.print(real);
+        else if(real == 0)
+            System.out.print(img + "i");
+        else
+        {
+            System.out.print(real);
+            if(img < 0)
+                System.out.print(img + "i");
+            else
+                System.out.print( "+" + img + "i");
+        }
+    }
+}
+
 class Matrix<E>
 {
 
@@ -42,7 +74,7 @@ class Matrix<E>
         {
             for(int  j = 0 ; j < matrix[i].length ; j++)
             {
-                System.out.print( matrix[i][j] + " ");
+                System.out.printf("%4d", matrix[i][j]); // manage setw() ...?????s
             }
             System.out.println();
         }

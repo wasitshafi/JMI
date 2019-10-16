@@ -28,6 +28,8 @@ class complex{
 	
 	void complex::putdata()
 	{
+		//Better way to print complex no refer : https://github.com/wasitshafi/JMI-MCA/blob/master/III-sem/java/JavaLabPrograms%26Assignments/Assignments/Assig%235/Solution.java 
+
 		if( img == 0)
 		 cout<< real; 
 		else if( real == 0)

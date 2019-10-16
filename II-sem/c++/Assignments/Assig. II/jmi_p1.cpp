@@ -30,28 +30,16 @@ class COMPLEX{
 
 	void putdata( COMPLEX c )
 	{
+		// Better way of printing complex no : refer: https://github.com/wasitshafi/JMI-MCA/blob/master/III-sem/java/JavaLabPrograms%26Assignments/Assignments/Assig%235/Solution.java 
+
 		if( c.img == 0 )
 		 cout << c.real;
 		else if( c.real == 0)
 		 cout << c.img << "i";
 		else if( c.img < 0)
 		 cout << c.real << c.img << "i";
-		else
+		elsee
 		 cout << c.real << " + " << c.img << "i";
-	          // OR   // refer: 
-	/*  if(real == 0 && img == 0)
-            System.out.print("0");
-        else if(img == 0)
-            System.out.print(real);
-        else
-        {
-            System.out.print(real);
-            if(img < 0)
-                System.out.print(img + "i");
-            else
-                System.out.print( "+" + img + "i");
-        }
-	 */
 	}
 	COMPLEX sum(COMPLEX c1, COMPLEX c2)
 	{
