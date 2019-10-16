@@ -27,6 +27,7 @@ class COMPLEX{
 	friend COMPLEX sum( COMPLEX, COMPLEX );
 };
 
+
 	void putdata( COMPLEX c )
 	{
 		if( c.img == 0 )
@@ -37,8 +38,21 @@ class COMPLEX{
 		 cout << c.real << c.img << "i";
 		else
 		 cout << c.real << " + " << c.img << "i";
+	          // OR   // refer: 
+	/*  if(real == 0 && img == 0)
+            System.out.print("0");
+        else if(img == 0)
+            System.out.print(real);
+        else
+        {
+            System.out.print(real);
+            if(img < 0)
+                System.out.print(img + "i");
+            else
+                System.out.print( "+" + img + "i");
+        }
+	 */
 	}
-
 	COMPLEX sum(COMPLEX c1, COMPLEX c2)
 	{
     COMPLEX c;
