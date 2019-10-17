@@ -59,12 +59,16 @@ class Matrix<E>
     
     public void populateData()
     {
+       
         Random rand = new Random();
-
+  
+        // System.out.print(matrix[0][0].getClass().getSimpleName());
+        //
+        
         for(int i = 0 ; i < matrix.length; i++)
         {
             for(int  j = 0 ; j < matrix[i].length; j++)             
-                matrix[i][j] = rand.nextInt(upperBound - lowerBound) + lowerBound;
+                matrix[i][j] = rand.nextInt(upperBound - lowerBound) + lowerBound; // ???How to get typename... 
         }
     }
 
