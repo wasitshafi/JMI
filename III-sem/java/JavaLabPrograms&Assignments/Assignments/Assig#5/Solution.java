@@ -45,7 +45,7 @@ class Matrix<E>
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter lower Bound    : ");
         lowerBound = scan.nextInt();
-        System.out.print("Enter lower Bound    : ");
+        System.out.print("Enter lower Bound    : ");    
         upperBound = scan.nextInt();
     }
 
@@ -61,9 +61,24 @@ class Matrix<E>
     {
        
         Random rand = new Random();
-  
-        // System.out.print(matrix[0][0].getClass().getSimpleName());
-        //
+/*
+        System.out.println(matrix[0][0].getClass().getSimpleName());
+        System.out.println(matrix[0][0].getClass().getName());
+        System.out.println(matrix[0][0].getClass().getCanonicalName());
+        System.out.println(matrix[0][0].getClass().getTypeName());
+        System.out.println(matrix[0][0].getClass().getPackageName());
+*/
+         /*
+        E temp ; // i want name of temp without initializing it , for that it gives an error....    
+        System.out.println("\n\n");
+        System.out.println(temp.getClass().getSimpleName());
+        System.out.println(temp.getClass().getName());
+        System.out.println(temp.getClass().getCanonicalName());
+        System.out.println(temp.getClass().getTypeName());
+        System.out.println(temp.getClass().getPackageName());
+        */
+
+
         
         for(int i = 0 ; i < matrix.length; i++)
         {
