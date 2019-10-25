@@ -20,7 +20,7 @@ update employeeNameAndCityView set ecity = 'Delhi' where ename = 'John';
 create view employee4company4View as select e.empnumber, e.ename, e.ecity, e.salary, e.eaddress, e.deptname, c.cname, c.ccity from employee4 e, company4 c;
 
 --d
-
+Remarks : Wrong Question(There exists dependencies).
 --e
 ###############################3
 declare
