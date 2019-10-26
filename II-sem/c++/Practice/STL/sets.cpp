@@ -8,9 +8,8 @@ using namespace std;
 
 int main()
 {
-    set<int> s;  // === "set<int, less<int>> s;"" as by default is stores the element in ascending
-
-    // we can also use "set<int> , greater<int>> s;" so that the elements are stored in descending order 
+    set<int> s;  // === 'set<int, less<int>> s;' as by default elements are stored ascending order.
+    // we can also use  "set<int, greater<int>> s;" for storing elements in descending order.
 
 
     cout << "s.empyt() = " << s.empty();
