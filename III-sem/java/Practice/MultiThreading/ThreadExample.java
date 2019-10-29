@@ -34,10 +34,10 @@ public class ThreadExample
 {
     public static void main(String[] args)
     {
-        MyThread t = new MyThread();
-        t.start();
+        MyThread t = new MyThread(); // New state
+        MyThread t2 = new MyThread(); 
 
-        MyThread t2 = new MyThread();
+        t.start();                   // Runnable State(A Thread may or may not be actually in running state depending on OS)
         t2.start();
     }
 }

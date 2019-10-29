@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.concurrent.TimeUnit;
 class MyThread extends Thread{
    
     String threadName;
@@ -49,6 +49,16 @@ public class ThreadExample2
         for(int i = 0 ; i < n  ; i ++)
         {
             threads[i] = new MyThread();
+            try
+            {
+                TimeUnit.SECONDS.sleep(1);  
+            }
+            catch(Exception e)
+            {
+                System.out.print("Error Occured...!");
+            }
         }
-    }
+        scan.close();
+        System.out.println("End of main Thread.");
+    } 
 }
