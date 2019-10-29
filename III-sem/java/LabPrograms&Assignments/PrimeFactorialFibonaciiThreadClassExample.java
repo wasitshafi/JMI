@@ -110,7 +110,15 @@ public class PrimeFactorialFibonaciiThreadClassExample
         primeThread.start();
         factorialThread.start();
         fibonaciiThread.start();
-
+       
+        try
+        {
+            primeThread.join();
+            factorialThread.join();
+            fibonaciiThread.join();
+        }
+        catch(Exception e){}
         scan.close();
+        System.out.println("End of main thread.");
     }
 }
