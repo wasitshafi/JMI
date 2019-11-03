@@ -22,14 +22,16 @@ create view employee4company4View as select e.empnumber, e.ename, e.ecity, e.sal
 --d
 Remarks : Wrong Question(There exists dependencies).
 --e
-###############################3
+
+###############################
+Wrong Question
 declare
      average number(10, 2);
 begin
      select avg(salary) into average from employee4;
      dbms_output.put_line('Average : ' || average);
 end;
-###########################33
+###########################
 
 --f
 declare
