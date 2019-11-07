@@ -1,3 +1,9 @@
+/*
+write a multithreaded java app for finding all the possible numbers of palindromes 
+of size atleast 3 corrected in a given string . the string will be given as input 
+through a file and all the possible palindromes also has to be stored in a file.
+Given string is a human genome string containing repetition ATGC
+*/
 // Refer link below for Random DNA Sequence generator 
 // https://faculty.ucr.edu/~mmaduro/random.htm
 
@@ -73,8 +79,9 @@ public class Palindrome
         t1.start();
         t2.start();
 
-        //System.out.println("Total no of Palindromes : " + t1.getCount());
-
+        t1.join();
+        t2.join();
+        System.out.println("Total no of Palindromes : " + t1.getCount());
         fscan.close();
         scan.close();
     }
