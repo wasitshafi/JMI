@@ -1,12 +1,10 @@
 /*
-write a multithreaded java app for finding all the possible numbers of palindromes 
-of size atleast 3 corrected in a given string . the string will be given as input 
-through a file and all the possible palindromes also has to be stored in a file.
-Given string is a human genome string containing repetition ATGC
+Write multithreaded Java application for finding all the possible numbers of palindromes of size at 
+least 3 in the given long string of DNA sequence. Take sequence input through file and store 
+palindromes in a text file. Do you find multithreaded applications better than single threaded?
 */
 // Refer link below for Random DNA Sequence generator 
 // https://faculty.ucr.edu/~mmaduro/random.htm
-
 import java.util.Scanner;
 import java.io.File;
 
