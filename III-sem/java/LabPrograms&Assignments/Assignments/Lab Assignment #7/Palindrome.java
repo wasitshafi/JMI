@@ -5,32 +5,43 @@ palindromes in a text file. Do you find multithreaded applications better than s
 */
 // Refer link below for Random DNA Sequence generator 
 // https://faculty.ucr.edu/~mmaduro/random.htm
+
 import java.util.Scanner;
-import java.io.File;
+import java.io.*;
+import java.util.*;
+//import java.io.File;
 
 class PalindromeThread extends Thread
 {
+    int k;  //local
     static int count = 0;
-    String DNA;    // share DNA & k...?
-    int index, k;
+    static String DNA;
+    static Set <String> allPalindromes  = new TreeSet<String>();
 
-    PalindromeThread(String DNA, int index, int k)
+    PalindromeThread(String DNA, int k)
     {
         this.DNA = DNA;
-        this.index = index;
         this.k = k;
+        start();
     }
 
+    PalindromeThread(int k)
+    {
+        this.k = k;
+        start();
+    }
+    
     public void run()
     {
-        for(int i = index ; i < DNA.length() - k + 1 ; i = i + k)
+        for(int i = 0 ; i < DNA.length() - k + 1 ; i++)
         {
             if(isPalindrome(i, i + k - 1))
             {
-                System.out.printf("%s(%3d, %3d) : %s %n",getName(), (i + 1), (i + k), DNA.substring(i, i+ k)); // %3d  because |DNA| is 999 characters
+                if(!(allPalindromes.contains(DNA.substring(i, i+ k)))) allPalindromes.add(DNA.substring(i, i+ k));
+                System.out.printf("%3d) %s(%3d, %3d) : %s %n",count + 1, getName(), (i + 1), (i + k), DNA.substring(i, i+ k)); // %3d  because |DNA| is 999 characters
                 count++;
             }
-            try { Thread.sleep(50); }
+            try { Thread.sleep(1); }
             catch(Exception e){}
         }
     }
@@ -48,9 +59,28 @@ class PalindromeThread extends Thread
         }
         return palindrome;
     }
+
     public int getCount()
     {
         return count;
+    }
+
+    public synchronized void write()
+    {
+        try
+        {
+            String filePath = "output.txt";
+            FileWriter fw = new FileWriter(filePath, false);  // true === append, false === overwrite
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter pw = new PrintWriter(bw);
+            pw.println(allPalindromes);
+            pw.flush();
+            pw.close();
+        }
+        catch(Exception e)
+        {
+            System.out.print("Error occured");
+        }
     }
 }
 
@@ -69,17 +99,22 @@ public class Palindrome
         System.out.println();
 
         while(fscan.hasNext()) DNA += fscan.nextLine();
-            
-        PalindromeThread t1 = new PalindromeThread(DNA, 0, k);
-        PalindromeThread t2 = new PalindromeThread(DNA, 1, k);
-        t1.setName("TRD1");
-        t2.setName("TRD2");
-        t1.start();
-        t2.start();
+        PalindromeThread t[] = new PalindromeThread[k];
 
-        t1.join();
-        t2.join();
-        System.out.println("Total no of Palindromes : " + t1.getCount());
+        for(int i = 0 ; i < k ; i++)
+        {
+            if(i == 0) t[i] = new PalindromeThread(DNA, i + 1); //we don't need to pass DNA each time
+            else t[i] = new PalindromeThread(k);
+
+            t[i].setName("TRD" + (i + 1));
+        }
+        
+
+        for(int i = 0 ; i < k ; i++)
+            t[i].join();
+
+        System.out.println("Total no of Palindromes : " + t[0].getCount());
+        t[0].write();
         fscan.close();
         scan.close();
     }
