@@ -1,24 +1,27 @@
-final class animal{
+final class Animal
+{
     public void msg1()
     {
-        System.out.print("Hello from animal class");
+        System.out.print("Hello from Animal class");
     }
 }
-// CTM : a class is refered as final class if it has prefix 'final' keyword 
+
 // As animal class is now final class so it can't be used in inheritance as a superclass
-/*  //error
-class tiger extends animal {
+/*
+class Tiger extends Animal
+{
     public void msg2()
     {
         System.out.print("Hello from Tiger class");
     }
 }
 */
-public class finalClass
+
+public class FinalClass
 {
     public static void main(String []args)
     {
-        animal objAnimal = new animal();
+        Animal objAnimal = new Animal();
         objAnimal.msg1();
     }
 }

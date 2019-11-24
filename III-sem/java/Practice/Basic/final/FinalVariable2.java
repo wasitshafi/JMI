@@ -1,6 +1,6 @@
-class finalV2{
+public class FinalVariable2{
     double PI; // we can also initilize it in Constructor/IIB
-    finalV2()
+    FinalVariable2()
     {
         PI = 3.1415;       
         System.out.println("Inside Constructor...");
@@ -12,7 +12,7 @@ class finalV2{
     }
     public static void main(String []arg)
     {
-        finalV2 obj = new finalV2();
+        FinalVariable2 obj = new FinalVariable2();
         obj.show();
 
     }

@@ -1,4 +1,4 @@
-class finalV3{
+public class FinalVariable3{
     final double PI;
     //IIB
     {
@@ -6,7 +6,7 @@ class finalV3{
         System.out.println("Inside Instance Initilization Block(IIB)...");
         System.out.println("Value of PI is : " + PI);
     }
-    finalV3()
+    FinalVariable3()
     {      
         System.out.println("\nInside Constructor...");
         System.out.println("Value of PI is : " + PI);
@@ -18,7 +18,7 @@ class finalV3{
     }
     public static void main(String []arg)
     {
-        finalV3 obj = new finalV3();
+        FinalVariable3 obj = new FinalVariable3();
         obj.show();
 
     }

@@ -1,4 +1,4 @@
-class finalV{
+public class FinalVariable1{
     public static void main(String []arg)
     {
         final double PI = 3.1415;  // declaring constant

@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FinalMethod",
+            "request": "launch",
+            "mainClass": "FinalMethod",
+            "projectName": "III-sem_f1122393"
+        }
+    ]
+}
