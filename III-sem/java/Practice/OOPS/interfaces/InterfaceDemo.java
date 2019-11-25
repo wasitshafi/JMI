@@ -1,3 +1,5 @@
+// CTM : Interface fields are public, static and final by default i.e: int x === public static final int x;
+//       Methods are public and abstract by default.
 interface Shape
 {
     final static double pi = 3.1415; //CTM : All the variables and methods in an interface are treated as constants even if the keywords final and static is not present 
