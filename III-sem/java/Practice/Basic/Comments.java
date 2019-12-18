@@ -4,7 +4,8 @@ public class Comments
 {
     public static void main(Strings []args)
     {
-        
+
+        // There is no need to prefix '*' for each line ie /** ... */ will also work
         /**
          * This kind of comment is used to generate documentation automatically
          * @author wasitshafi
