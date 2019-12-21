@@ -4,7 +4,7 @@ interface Shape
 {
     final static double pi = 3.1415; //CTM : All the variables and methods in an interface are treated as constants even if the keywords final and static is not present 
     double e = 2.71828;
-    double getArea(double x, double y); // CTM : final is used for making the constant just like 'const' in c/c++
+    double getArea(double x, double y); // CTM : By default interface method are public
 }
 
 class Rectangle implements Shape
