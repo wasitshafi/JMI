@@ -1,3 +1,4 @@
+import static java.lang.System.out;
 public class String2
 {
     public static void main(String []args)
@@ -22,45 +23,47 @@ public class String2
         String str2 = "Hello";
         String str3 = "Hello";
         String str4 = "HeLlO";
-        String str5 = "Hello Word";        
+        String str5 = "Hello Word";
+    
         // CTM  : equal() returns true is the content are identical where as == return true if the strings are store on the same location.
-        // NOTE : If string are in the same location, they must be equal.But it is entirely possivle to store multiple copies of identical string in different places
+        // NOTE : If string are in the same location, they must be equal.But it is entirely possible to store multiple copies of identical string in different places
         
-        System.out.println("str2 : '" + str2 + "'");
-        System.out.println("str3 : '" + str3 + "'");
-        System.out.println("str4 : '" + str4 + "'");
-        System.out.println("str5 : '" + str5 + "'");        
-        System.out.println("str5.substring(0, 5) : '" + str5.substring(0, 5) + "'");
-        System.out.println();
+        out.println("str2 : '" + str2 + "'");
+        out.println("str3 : '" + str3 + "'");
+        out.println("str4 : '" + str4 + "'");
+        out.println("str5 : '" + str5 + "'");        
+        out.println("str5.substring(0, 5) : '" + str5.substring(0, 5) + "'");
+        out.println();
 
         if(str2 == str3) // base on location
-            System.out.println("str2 == str3 : true");
+            out.println("str2 == str3 : true");
         else
-            System.out.println("str2 == str3 : false");
+            out.println("str2 == str3 : false");
 
         if(str2.equals(str3)) // based on content
-            System.out.println("str2.equals(str3) : true");
+            out.println("str2.equals(str3) : true");
         else
-            System.out.println("str2.equals(str3) : false");
+            out.println("str2.equals(str3) : false");
         
         if(str2.compareTo(str3) == 0) // based on content for lexico-graphic comparision return value less than 0 if calling string object is less than argument string, returns 0 if both strings are same, returns greater than 0 if calling string object is greater than argument string object            System.out.println("str2.compareTo(str3 : true");
-            System.out.println("str2.compareTo(str3) = 0[Means they are same by string content]");    
+            out.println("str2.compareTo(str3) = 0[Means they are same by string content]");    
         else 
-            System.out.println("str2.compareTo(str3) != 0[Means they are not same by string content]");
+            out.println("str2.compareTo(str3) != 0[Means they are not same by string content]");
 
         if(str3.equalsIgnoreCase(str4.substring(0,5))) // based on content
-            System.out.println("str3.equalsIgnoreCase(str4.substring(0,5) : true");
+            out.println("str3.equalsIgnoreCase(str4.substring(0,5) : true");
         else
-            System.out.println("str3.equalsIgnoreCase(str4.substring(0,5) : false");
+            out.println("str3.equalsIgnoreCase(str4.substring(0,5) : false");
 
         if(str3 == str5.substring(0,5))
-            System.out.println("str3 == str5.substring(0,5) : true");
+            out.println("str3 == str5.substring(0,5) : true");
         else
-            System.out.println("str3 == str5.substring(0,5) : false");
+            out.println("str3 == str5.substring(0,5) : false");
             
         if(str3.equals(str5.substring(0,5)))
-            System.out.println("str3.equals(str5.substring(0,5)) : true");
+            out.println("str3.equals(str5.substring(0,5)) : true");
         else
-            System.out.println("str3.equals(str5.substring(0,5)) : false");
+            out.println("str3.equals(str5.substring(0,5)) : false");
+
     }
 }
