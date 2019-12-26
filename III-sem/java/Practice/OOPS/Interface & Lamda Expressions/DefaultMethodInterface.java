@@ -42,9 +42,11 @@ public class DefaultMethodInterface
         i = obj1;
         i.fun1();
         i.def();
+
         out.println();
         i = obj2;
         i.fun1();
         i.def();
+
     }
 }
