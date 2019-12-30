@@ -31,10 +31,11 @@ class OuterClass
 
     class InnerClass
     {
+        // if you want to declare static variables then it must be declared as 'final'
         private String str2; // default modifier
-        public int y;        // public modifier
+        public int y;        // public modifier 
 
-        public void methodInner()
+        public void methodInner()// Inner class Can't have static methods
         {
             out.println("Hello From Inner Class");
             out.println("x : " + x); // Inner class can access private members of outer class.//here outer class object reference is implicit by compiler
