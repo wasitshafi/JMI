@@ -1,4 +1,5 @@
-public class Exception2{
+public class Exception2
+{
      // for more info read : https://www.w3schools.com/java/java_try_catch.asp
      //                      https://www.geeksforgeeks.org/types-of-exception-in-java-with-examples/
     public static void main(String a[])
@@ -20,6 +21,7 @@ public class Exception2{
         catch(ArithmeticException e)
         {
         }
+        // Q: what if exception occurs inside catch/finally block? how to handle that case... 
         catch(ArrayIndexOutOfBoundsException e)
         {
           System.out.println();
