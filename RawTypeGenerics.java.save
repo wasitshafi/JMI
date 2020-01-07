@@ -1,0 +1,28 @@
+class SampleClass<T>
+{
+	T x;
+	
+	public SampleClass(T x)
+	{
+		this.x = x;
+	}
+	public get()
+	{
+		System.out.println("x : " + x);
+	}
+}
+
+public class RawType
+{
+	public static void main(String... args)
+	{
+		SampleClass o = new  SampleClass(10);
+		o.get();
+		SampleClass o = new  SampleClass(10);
+		o.get();		SampleClass o = new  SampleClass(10);
+		o.get();
+
+
+
+	}
+}
