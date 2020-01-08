@@ -4,7 +4,7 @@ Quick Links:
 
 C                 : https://github.com/wasitshafi/JMI-MCA/tree/master/I-sem/c%20programming/Assignments
 
-C++               : https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem/c%2B%2B
+<a href = "https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem/c%2B%2B"><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"></a>               : https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem/c%2B%2B
 
 Assembly Language : https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem/Microprocessor
 
