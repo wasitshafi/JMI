@@ -23,22 +23,31 @@ public class ArrayListDemo
         }while(choice.equals("y"));
 
         System.out.println();
-        System.out.print("Iterating over ArrayLists using for each loop :");
+        System.out.print("Iterating over ArrayLists using for each loop : ");
         for(Integer i : arrayList) System.out.print(i + " ");
 
         System.out.println();        
-        System.out.print("Iterating over ArrayLists using for loop :");
+        System.out.print("Iterating over ArrayLists using for loop : ");
         for(int i = 0 ; i < arrayList.size() ; i++) System.out.print(arrayList.get(i) + " ");
 
         System.out.println();
-        System.out.print("Iterating over ArrayLists using Iterator :");
+        System.out.print("Iterating over ArrayLists using Iterator : ");
         Iterator <Integer>itr = arrayList.iterator();
         while(itr.hasNext()) System.out.print(itr.next() + " ");
 
         System.out.println();
-        System.out.print("Iterating over ArrayLists using for each method(lamda expression) :");
-        arrayList.forEach(element->System.out.printjelement + " "));
+        System.out.print("Iterating over ArrayLists using for each method(lamda expression) : ");
+        arrayList.forEach(element -> System.out.print(element + " "));
         System.out.println();
+
+        // java8
+        System.out.println();
+        itr = arrayList.iterator();
+        System.out.print("Iterating over ArrayLists using for eachEachRemaining(lamda expression) : ");
+        itr.forEachRemaining(element -> {System.out.print(element + " ");});
+        System.out.println();
+
+        
         
 
         scan.close();
