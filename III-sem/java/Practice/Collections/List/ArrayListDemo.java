@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+// CTM : here we have used Collections along generic, although we can use Collections without generics(raw type/ without bounding)
 public class ArrayListDemo
 {
     public static void main(String[] args)
@@ -31,13 +32,15 @@ public class ArrayListDemo
 
         System.out.println();
         System.out.print("Iterating over ArrayLists using Iterator :");
-        Iterator itr = arrayList.iterator();
+        Iterator <Integer>itr = arrayList.iterator();
         while(itr.hasNext()) System.out.print(itr.next() + " ");
 
         System.out.println();
-        System.out.print("Iterating over ArrayLists using for each method :");
-        arrayList.forEach(Element->System.out.print(Element + " "));
+        System.out.print("Iterating over ArrayLists using for each method(lamda expression) :");
+        arrayList.forEach(element->System.out.printjelement + " "));
         System.out.println();
+        
+
         scan.close();
     }
 }
