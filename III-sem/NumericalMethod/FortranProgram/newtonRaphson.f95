@@ -1,4 +1,4 @@
-program NewtonRaphson
+program newtonRaphson
     real F;
     integer x;
     F(x) = x**2 + x - 5;
@@ -12,4 +12,4 @@ program NewtonRaphson
     
     print *, x;
 
-end program NewtonRaphson
+end program newtonRaphson
