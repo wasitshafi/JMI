@@ -1,7 +1,7 @@
 program primeNo
-    integer n;
+    integer :: n;
     logical isPrime /.true./
-    integer  i, j;
+    integer :: i, j;
 
     print *, "Enter value of n...";
     read *, n;

@@ -12,9 +12,9 @@ program datatype
    character(len = 20) :: str;
    logical :: bool;
    complex :: c;  ! CTM: we can perform several operation between complex numbers ex: c1 = c1 + c2; 
-
-   real, parameter :: pi = 3.1415 ! constant syntax <data_type>, parameter :: <constant name> = <exp>
    
+   real, parameter :: pi = 3.1415 ! constant syntax <data_type>, parameter :: <constant name> = <exp>
+   ! for constants its not like "real, parameter ::pi /3.1415/"
    str = "Hello world i am wasit shafi";
    i = 10;
    r = 55.36;
