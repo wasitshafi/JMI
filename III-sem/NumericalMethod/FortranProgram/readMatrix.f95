@@ -14,7 +14,7 @@ program readMatrix
     print *, "Marix Elements are as as : ";
     do i = 1, rows
         do j = 1, cols
-            print *, a(i, j), " ";
+            print *, a(i, j);
         end do
         print *, "";
     end do
