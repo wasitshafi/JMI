@@ -62,6 +62,7 @@ class FactorialThread extends Thread
     }
 }
 
+// we can also use binets formula : ((pow(1 + sqrt(5), n)) - (pow(1 - sqrt(5), n))) / (pow(2,n) * sqrt(5));
 class FibonaciiThread extends Thread
 {
     private int n;

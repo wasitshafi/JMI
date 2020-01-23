@@ -1,3 +1,4 @@
+// we can also use binets formula : ((pow(1 + sqrt(5), n)) - (pow(1 - sqrt(5), n))) / (pow(2,n) * sqrt(5));
 import java.util.Scanner;
  
 public class fibonacii

@@ -17,8 +17,8 @@ void multiply(int arr[], int n, int x)
 {
     long int temp, carry = 0;   // it can store value 9 * 3641 + carry === 32769 + carry 
     short int noOfDigits = getNoOfDigits(arr, n);
-
-    for(int i = n ; i > n - noOfDigits ; i-- )
+    int i;
+    for(i = n ; i > n - noOfDigits ; i-- )
     {
         temp = arr[i] * x + carry;
         arr[i] = temp % 10;
@@ -27,7 +27,7 @@ void multiply(int arr[], int n, int x)
 
     while(carry)
     {
-        arr[n - noOfDigits++] = carry % 10;
+        arr[i--] = carry % 10;
         carry = carry / 10; 
     }
 }

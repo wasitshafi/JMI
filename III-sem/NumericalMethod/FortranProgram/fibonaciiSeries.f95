@@ -1,3 +1,4 @@
+! we can also use binets formula : ((pow(1 + sqrt(5), n)) - (pow(1 - sqrt(5), n))) / (pow(2,n) * sqrt(5));
 program fibonaciiSeries
     implicit none;
     integer term, term1, term2, n, i;
