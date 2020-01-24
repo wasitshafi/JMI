@@ -1,7 +1,9 @@
 //
-//jmi_p16.c on 10-08-18
+// jmi_p16.c on 10-08-18
 //
-//program to computer first N fibonacci series
+// program to computer first N fibonacci series
+// we can also use binets formula : ((pow(1 + sqrt(5), n)) - (pow(1 - sqrt(5), n))) / (pow(2,n) * sqrt(5));
+
 #include<stdio.h>
 
 int main()
