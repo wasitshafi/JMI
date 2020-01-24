@@ -1,5 +1,13 @@
 > # How to run program from linux terminal
->    - use cmd ``gcc filename.c`` hit enter then to run executable file use ``./a.out`` hit enter.
+>  - **Method 1**
+>    - use cmd ``gcc filename.c`` hit enter now to run executable file use ``./a.out`` hit enter.
+>  - **Method 2**
+>    - use cmd ``gcc filename.c -o executablefilename`` hit enter now to run executable file use ``executablefilename`` hit enter.
+>       - E.g. ``gcc hello.c -o a`` hit enter now to run executable file use ``a`` hit enter.
 <br/><br/>
 > # How to run program from windows dos
->    - use cmd ``gcc filename.c`` hit enter then to run executable file use ``a.exe`` hit enter.
+>  - **Method 1**
+>    - use cmd ``gcc filename.c`` hit enter now to run executable file use ``a.exe`` hit enter.
+>  - **Method 2**
+>    - use cmd ``gcc filename.c -o executablefilename`` hit enter now to run executable file use ``executablefilename`` hit enter.
+>       - E.g. ``gcc hello.c -o a`` hit enter now to run executable file use ``a`` hit enter.
