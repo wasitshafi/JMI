@@ -24,12 +24,11 @@ public class BigIntegerLogicalOperations
         
         if( BigInteger.valueOf(x).compareTo(b1) > 0 )
             System.out.println("Integer Variable(x) is greater than biginteger(b1).");
-        else if ( BigInteger.valueOf(x).compareTo(b1) > 0 )
+        else if (BigInteger.valueOf(x).compareTo(b1) > 0)
             System.out.println("Integer Variable(x) is less than biginteger(b1).");
         else
             System.out.println("Both are equal");
-        
-        System.out.println("\n\n");
+
         System.out.println("b1 & b2 : " + b1.and(b2));
         System.out.println("b1 | b2 : " + b1.or(b2));
         System.out.println("b1 xor b2 : " + b1.xor(b2));
