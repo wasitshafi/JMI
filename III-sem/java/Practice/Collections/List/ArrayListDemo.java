@@ -10,7 +10,7 @@ public class ArrayListDemo
         Integer item;
         String choice;
         Scanner scan = new Scanner(System.in);
-        ArrayList <Integer> arrayList = new ArrayList<>();
+        ArrayList <Integer> arrayList = new ArrayList<>(); // they are not thread synchronized where as vector are sync., arraylist is quit fast as compared with vector
 
         do
         {

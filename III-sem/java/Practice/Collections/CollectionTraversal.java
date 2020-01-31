@@ -8,7 +8,7 @@ public class CollectionTraversal
     {
         PrintStream p = new PrintStream(System.out);
         ArrayList<Integer> arr = new ArrayList<>();
-        Iterator<Integer> itr;
+        Iterator<Integer> itr; // we also have ListInterface with additional methods eg : hasPrevious(), previous()
         
         arr.add(10);
         arr.add(20);
@@ -38,7 +38,7 @@ public class CollectionTraversal
 
         itr = arr.iterator();
         p.print("\nMethod 6    : ");
-        itr.forEachRemaining(element -> {p.print(element + " ");});
+        itr.forEachRemaining(element -> {p.print(element + " ");}); // arguments -> body
          // or
         p.print("\nMethod 601  : ");
         (arr.iterator()).forEachRemaining(element -> p.print(element + " "));
