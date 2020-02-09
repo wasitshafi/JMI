@@ -1,94 +1,75 @@
+/**
+    @author wasitshafi
+    @since  09-02-2020
+ */
+import static java.lang.System.out;
 import java.util.Scanner;
-
-import sun.jvm.hotspot.utilities.AltPlatformInfo;
 
 class Registration
 {
     String name, address, city, mobileNo, emailId;
     String loginId, password;
     
-    Registration(String name, String address, String city, String mobileno, String emailId)
+    private void setPassword()
     {
-        String p;
+        int len;
+        String pwd;
         Scanner scan = new Scanner(System.in);
-        
-        System.out.print("Enter loginID : ");
-        loginId = scan.nextLine();
         
         Boolean noSpace = true;
         Boolean atleastEightCharacter = false;
         Boolean atleastUpperCase = false;
         Boolean atleastNumber = false;
         
-        do{
-            System.out.print("Enter Password : ");
-            p = scan.nextLine();
+        do
+        {
+            out.print("Enter Password : ");
+            pwd = scan.nextLine();
+            len = pwd.length();
 
-            for(int i = 0 ; i < p.length() ; i++)   // for space
+            if(len >= 8) atleastEightCharacter = true;
+            for(int i = 0 ; i < len ; i++)
             {
-                noSpace = true; 
-                if(p.charAt(i) == ' ')
-                {
-                    noSpace = false;
-                    break;
-                }
+                if(pwd.charAt(i) == ' ') noSpace = false;
+                if(pwd.charAt(i) >= 'A' &&  pwd.charAt(i) <= 'Z')  atleastUpperCase = true;
+                if(pwd.charAt(i) >= '0' &&  pwd.charAt(i) <= '9') atleastNumber = true;
             }
-            
-            if(p.length() >= 8) // for password length
+            if(!(noSpace && atleastEightCharacter && atleastUpperCase && atleastNumber))
+            {
+                out.println("Invalid passord...! Try Again");
+                noSpace = true;
                 atleastEightCharacter = false;
-            
-            for(int i = 0 ; i < p.length() ; i++)   // for UpperCase
-            {
-
-                atleastUpperCase = false; 
-                if(p.charAt(i) >= 'A' or)
-                {
-                    noSpace = false;
-                    break;
-                }
+                atleastUpperCase = false;
+                atleastNumber = false;
             }
-            
+        }while(!(noSpace && atleastEightCharacter && atleastUpperCase && atleastNumber));
 
-
-
-
-            if(noSpace == false)
-                System.out.println("MSG : Password Containts WhiteSpace.");
-            if(atleastEightCharacter == false)
-                System.out.println("MSG : Password Contains < 8 characters");
-            
-
-        }while(noSpace == false);
-
-
-
-        password = p;
-        this.name = name;
-        this.address = address;
-        this.city = city;
-        this.mobileNo = mobileno;
-        this.emailId = emailId;
+        password = pwd;
         scan.close();
     }
-/*    public void set()
+
+    public void set()
     {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter name : ");
+        out.print("Enter name     : ");
         name = scan.nextLine();
-        System.out.println("Enter Address   : ");
-        addres = scan.nextLine();
-        System.out.println("Enter city : ");
+        out.print("Enter Address  : ");
+        address = scan.nextLine();
+        out.print("Enter city     : ");
         city = scan.nextLine();
-        System.out.println("Enter mobile No : ");
+        out.print("Enter mobile No: ");
         mobileNo = scan.nextLine();
-        System.out.println("Enter email ID  : ");
+        out.print("Enter email ID : ");
         emailId = scan.nextLine();
+        out.print("Enter login ID : ");
+        loginId = scan.nextLine();
+        setPassword();
         scan.close();
-    }*/
+    }
     public void get()
     {
-        System.out.println("Name : " + name + "\nAddress : " + address + "\nCity : " + city + "\nMobile no : " + mobileNo + "\nEmail ID : " + emailId + "\n\nLogin ID : " + loginId + "\nPassword : " + password);
+        out.println("Name     : " + name + "\nAddress  : " + address + "\nCity     : " + city + "\nMobile no: " + mobileNo + "\nEmail ID : " + emailId + "\nLogin ID : " + loginId + "\nPassword : " + password);
     } 
 }
 
@@ -96,8 +77,10 @@ public class Solution2018Q2C
 {
     public static void main(String[] args)
     {
-        Registration user = new Registration("Wasit Shafi","S.F Road, Solina Payeen, 190009", "Srinagar", "9599688744","wasitshafi700@gmail.com");        
+        Registration user = new Registration();
 
+        user.set();
+        out.println("\nUser Details");
         user.get();
     }
 }

@@ -1,3 +1,8 @@
+/**
+    @author wasitshafi
+    @since  09-02-2020
+ */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,7 +32,7 @@ class Triangle
 }
 public class Solution2017Q4A
 {
-    public static void main(String[] args)
+    public static void main(String... args)
     {
         int noOfObjects = 3;
 

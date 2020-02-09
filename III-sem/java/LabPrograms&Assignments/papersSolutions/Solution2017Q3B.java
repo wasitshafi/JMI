@@ -1,4 +1,9 @@
+/**
+    @author wasitshafi
+    @since  09-02-2020
+ */
 import java.util.Scanner;
+
 class StudentMarksOutOfBoundException extends Exception
 {
     public StudentMarksOutOfBoundException(String msg)

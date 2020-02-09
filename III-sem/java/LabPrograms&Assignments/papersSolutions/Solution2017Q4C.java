@@ -1,10 +1,12 @@
-/* Write a program to create two threads, first thread will print odd numbers and second thread will
-   print even numbers between 1 to 10 numbers.*/
+/**
+    @author wasitshafi
+    @since  09-02-2020
+ */
 import java.util.*;
 
 class EvenOdd extends Thread
 {
-    int i;  // thread local variable
+    int i;          // thread local variable
     EvenOdd(int n)
     {
         i = n;

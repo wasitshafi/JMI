@@ -1,4 +1,8 @@
-import java.util.StringTokenizer;
+/**
+    @author wasitshafi
+    @since  09-02-2020
+ */
+ import java.util.StringTokenizer;
 
 public class Solution2018Q3B
 {
@@ -7,14 +11,14 @@ public class Solution2018Q3B
         String str = "Oxford University Press,Cambridge University Press, Springer-Nature, Elsevier, TMH, Pearsons";
         StringTokenizer st = new StringTokenizer(str, ",");
 
-        while(st.hasMoreTokens())
-            System.out.println(st.nextToken().trim());//trim() to remove leading & trailing spaces
+        System.out.println("List of Publishers : ");
 
-        // Alternate Method
-        /*
-        String publishers[] = str.split(",");
-        for(int i = 0 ; i <  publishers.length ; i++)
+        while(st.hasMoreTokens()) System.out.println(st.nextToken().trim()); //trim() to remove leading & trailing spaces
+    
+      /*String publishers[] = str.split(",");
+        int len = publishers.length;
+        for(int i = 0 ; i < len ; i++)
             System.out.println(publishers[i].trim());
-        */
-        }
+      */
+    }
 }
