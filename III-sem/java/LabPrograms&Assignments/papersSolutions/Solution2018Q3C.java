@@ -42,13 +42,24 @@ class GenericArray<U extends Number>
         // casting rules : byte –> short -> int –> long –> float –> double
        // can we use instanceof for float , integer, double.....??????????//
        
+/*
+        U s = arr[0][0] - arr[0][0]; // just for sake of initialization
+        for(int i = 0 ; i < rows ; i++)
+            for(int j = 0 ; j < cols ; j++)
+                s += (U)arr[i][j];
+        System.out.println("sum : " + s);
+*/
+
+
+
        int j;
-       Double sum = 0.0d;
+       double sum = 0.0d;
        
        for(int i = 0 ; i < rows ; i++)
             for(j = 0 ; j < cols ; j++)
-                sum += (Double)arr[i][j];
+                sum += (double)arr[i][j];
         return sum;
+        
     }
 }
 
@@ -74,7 +85,7 @@ public class Solution2018Q3C
  
         System.out.println("\nFloat Matrix is as follows : ");
         f.get();
-//        System.out.println("Sum : " + f.genericSum());
+        //System.out.println("Sum : " + f.genericSum());
 
         System.out.println("\nDouble Matrix is as follows : ");
         d.get();
