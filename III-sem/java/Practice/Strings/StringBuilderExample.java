@@ -1,4 +1,8 @@
-import java.lang.StringBuilder;
+/**
+	@author wasitshafi
+	@since 10-02-2020
+*/
+//unlike StringBuffer, StringBuilder is not thread safe, so it is faster than StringBuffer
 import java.util.Scanner;
 
 public class StringBuilderExample     // Ref : Horstmann P.no 78

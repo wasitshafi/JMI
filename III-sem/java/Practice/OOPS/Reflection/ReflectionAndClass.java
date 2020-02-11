@@ -1,10 +1,13 @@
+/**
+    @author wasitshafi
+    @since 28-12-2019
+ */
 import static java.lang.System.out;
 import java.util.Scanner;
 
 class Person
 {
     private String name;
-
 }
 
 class Student extends Person
