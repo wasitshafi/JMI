@@ -2,6 +2,7 @@ import static java.lang.System.out;
 import java.util.Scanner;
 import java.util.*;
 
+// we can also implement this with TreeSet class, so that objects will automatically be sorted once they are added refer : hosrtman, pg no : 491 
 class Student implements Comparable
 {
     static int nextId;

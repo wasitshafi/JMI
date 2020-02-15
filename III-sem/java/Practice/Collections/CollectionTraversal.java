@@ -8,7 +8,7 @@ public class CollectionTraversal
     {
         PrintStream p = new PrintStream(System.out);
         ArrayList<Integer> arr = new ArrayList<>();
-        Iterator<Integer> itr; // we also have ListInterface with additional methods eg : hasPrevious(), previous()
+        Iterator<Integer> it; // We also have ListInterface(only for those which implement list interface) with additional methods eg : hasPrevious(), previous(), add() // refer : https://www.journaldev.com/13457/java-listiterator
         
         arr.add(10);
         arr.add(20);

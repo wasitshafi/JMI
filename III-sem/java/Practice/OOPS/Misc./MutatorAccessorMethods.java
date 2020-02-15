@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -23,6 +24,8 @@ public class MutatorAccessorMethods
         System.out.println("Day   : " + gc.get(Calendar.DAY_OF_MONTH));
         System.out.println("Month : " + gc.get(Calendar.MONTH)); // 1 for jan...11 for nov, 0 for Dec
         System.out.println("Year  : " + gc.get(Calendar.YEAR));
+        int arr[] ={2, 4, 77, 0, -4};
+        Arrays.sort(arr); // mutator method
 
         System.out.println();
         //add() is a mutator method as it change the state of the object i.e add() method is a mutates the object on which it is invoked.
@@ -30,5 +33,6 @@ public class MutatorAccessorMethods
         System.out.println("Day   : " + gc.get(Calendar.DAY_OF_MONTH));
         System.out.println("Month : " + gc.get(Calendar.MONTH));
         System.out.println("Year  : " + gc.get(Calendar.YEAR));
+        System.out.println("arr[] : " + Arrays.toString(arr));
     }
 }

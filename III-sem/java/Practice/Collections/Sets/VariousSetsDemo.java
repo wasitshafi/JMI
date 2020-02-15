@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.TreeSet;
 import java.util.LinkedHashSet;
 
-public class SetsDemo
+public class VariousSetsDemo
 {
     public static void main(String... args)
     {
@@ -28,7 +28,7 @@ public class SetsDemo
         System.out.println(s);
 
         // sorted set
-        s = new TreeSet<>(); // we can also user navigableSet which consists some additional methods()
+        s = new TreeSet<>(); // we can also user navigableSet which consists some additional methods() // internally it based on red-black trees
         s.add(10);
         s.add(20);
         s.add(30);
