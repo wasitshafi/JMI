@@ -4,16 +4,20 @@
     @since  10-02-2020
 */
 import java.util.Scanner;
+import java.util.Iterator;
 
-public class Solution2019SIIQ3
+public class Solution2019SIIQ3 
 {
-    public <U extends Number & Comparable<U>> void findHighest(U arr[])
+    public <U extends Comparable> void findHighest(U arr[])  // do read horstman pg no 517 & 518
     {
+        /*
         U max = arr[0];
         int len = arr.length;
 
         for(int i = 1 ; i < len ; i++) if(arr[i] >  max) max = arr[i];     // error
         System.out.println("Max : " + max); 
+*/
+        Iterator<U> itr = arr.Iterator();
 
     }
 
@@ -26,7 +30,8 @@ public class Solution2019SIIQ3
         Double arrD[] = {1.1111d, 2.2222d, 3.3333d, 4.4444d, 5.5555d, 6.6666d, 7.7777d, 8.8888d, 9.9999d};
 
         obj.<Integer>findHighest(arrI);
-        obj.<Float>findHighest(arrF);
+/*        obj.<Float>findHighest(arrF);
         obj.<Double>findHighest(arrD);
+        */
     }
 }
