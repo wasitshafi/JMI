@@ -22,9 +22,10 @@ class TestFrame extends JFrame
         setResizable(false); // by default its true
 
         //setSize(500,500); //Default size id 0 by 0 pixels
+        //pack(); // instead of mentioning size, we can use pack(), so the windows size will be enough to pack the components
         //setLocation(450, 10);// or setBound(x, y, width, height);
-        //setLocationByPlatform(true); // It usually picks the location with a slight offset from the last window
-              
+        //setLocationByPlatform(true); // It usually picks the location with a slight offset from the last window 
+
         //setVisible(true); // Its by default false because after creating frame we can add components to it and later set its visibility true
     }
 }
