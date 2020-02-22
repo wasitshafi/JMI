@@ -54,7 +54,9 @@ class TestFrame extends JFrame
 {
     TestFrame()
     {
-        add(new Component1());
+        Component1 c = new Component1();
+        c.setBackground(Color.PINK);
+        add(c);
         pack();
         setLocationByPlatform(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
