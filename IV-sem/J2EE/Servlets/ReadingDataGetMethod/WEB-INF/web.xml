@@ -1,0 +1,16 @@
+<web-app>
+    <servlet>
+        <servlet-name>ReadingDataGetMethod</servlet-name>
+        <servlet-class>ReadingDataGetMethod</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadingDataGetMethod</servlet-name>
+        <url-pattern>/urldemo</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.php</welcome-file>
+    </welcome-file-list>
+</web-app>
