@@ -1,0 +1,80 @@
+*{
+    font: 12px Comic Sans MS;
+    color:#333;
+}
+
+th{
+    font-weight: bolder;
+}
+
+input{
+    padding: 2px 5px;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
+
+fieldset{
+    margin: 10px 0px;
+}
+
+legend{
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px #555;
+}
+
+.main-container{
+    background-color: whitesmoke;
+    display: inline-block;
+    margin : 0px;
+    padding: 10px 20px;
+/*  border : 2px solid green;*/
+}
+.userinfo-form__header{
+    display: block;
+    text-align: center;
+    font: bolder 30px Tahoma;
+    padding:10px 0;
+    background-color: teal;
+    color:white;
+    text-shadow: 1px 3px 3px #dfdfdf;
+}
+tr, th, td{
+    text-align: left;
+    padding:0;
+    margin:0;
+}
+.userinfo-form{
+  /*  border : 5px solid red;*/
+}
+
+.userinfo-form__personalinfo-table, .userinfo-form__academicinfo-table, .userinfo-form__workinfo-table{
+    text-align: left;
+/*    border: 2px solid blue;*/
+}
+.userinfo-form__footer-form{
+    
+}
+.submit-button, .reset-button{
+    font: bolder 17px Tahoma;
+    margin-left: 30px;
+}
+.main-heading{
+    font: 30px Tahoma; 
+    font-weight: bolder!important;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.main-heading__sub-heading{
+    
+    font: 20px bold Tahoma;
+    text-align: center;
+    padding:0;
+    margin:0;
+    color:green;
+}

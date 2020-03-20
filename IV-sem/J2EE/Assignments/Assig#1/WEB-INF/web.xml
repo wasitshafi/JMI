@@ -1,0 +1,19 @@
+<web-app>
+    <servlet>
+        <servlet-name>Details</servlet-name>
+        <servlet-class>ShowDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Details</servlet-name>
+        <url-pattern>/userinfo</url-pattern> <!-- servlet is identified with only ulr pattern -->
+    </servlet-mapping>
+    <init-param>
+        <param-name></param-name>
+        <param-value></param-value>
+    </init-param>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.php</welcome-file>
+    </welcome-file-list>
+</web-app>

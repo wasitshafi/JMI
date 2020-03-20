@@ -1,0 +1,103 @@
+<!-- Write a J2EE Program which takes personal details (Name, Age, Sex, DoB, Address, etc), academic details 
+     (Schools, College, University, etc) and Experience details as input through a well-designed web-form.
+     On the submission of this form, a servlet is invoked which formats and displays these information in a tabular/printable form.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Registration Form</title>
+        <link rel="stylesheet" href="CSS/main.css">
+    </head>
+    <body>
+        <div class="main-container">
+
+            <form action="userinfo" method="GET" class="userinfo-form">
+                <div class="userinfo-form__header">Registration Form</div>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <table class="userinfo-form__personalinfo-table">
+                        <tr>
+                            <td><label for="name">Enter Name</label></td>
+                            <td><input type="text" placeholder="Your Name..." name="txtbName" tabindex="1" required /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="age">Enter Age</label></td>
+                            <td><input type="number" name="txtbAge" min="1" max="100" placeholder="Age" tabindex="2" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dob">Enter D.O.B</label></td>
+                            <td><input type="date" name="txtbDob"  tabindex="3" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dob">Sex</label></td>
+                            <td><input type="radio" name="gender" value="rdbMale"><label for="radioButtonMale" tabindex="4" required>Male</label>
+                                <input type="radio" name="gender" value="rdbFemale"><label for="radioButtonFemale"  tabindex="5">Female</label></td>
+                        </tr>
+                        <tr>
+                            <td><label type="text" for="contactno">Contact No</label></td>
+                            <td><input type="text" name="txtbContactNo" placeholder="10 Digit Mobile no." maxlength="10" tabindex="6" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email-ID</label></td>
+                            <td><input type="email" name="txtbEmailId"  placeholder="Email ID"  oninvalid="this.setCustomValidity('Invalid Email ID')"  tabindex="7" required/></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Academic Details</legend>
+                    <table class="userinfo-form__academicinfo-table" >
+                        <tr>
+                            <th>Class</th>
+                            <th>Board/University</th>
+                            <th>Reg. No</th>
+                            <th>Year of Passing</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td><label for="Matriculation">10th</label></td>
+                            <td><input type="text" name="10thBoardName" placeholder="Board Name" maxlength="40" tabindex="8" required/></td>
+                            <td><input type="text" name="10thRollno" placeholder="Registration. No"  tabindex="9" required/></td>
+                            <td><input type="number" name="10thYearOfPassing" placeholder="YYYY"  min="1947" max="2030" tabindex="10" required/></td>
+                            <td><input type="text" name="10thPercentage" placeholder="Percentage"  tabindex="11" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="12">12th</label></td>
+                            <td><input type="text" name="12thBoardName" placeholder="Board Name" maxlength="40" tabindex="12" required/></td>
+                            <td><input type="text" name="12thRollno" placeholder="Registration. No"  tabindex="13" required/></td>
+                            <td><input type="number" name="12thYearOfPassing" placeholder="YYYY"  min="1947" max="2030" tabindex="14" required/></td>
+                            <td><input type="text" name="12thPercentage" placeholder="Percentage"  tabindex="15" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="UG">UG</label></td>
+                            <td><input type="text" name="ugBoardName" placeholder="Board Name" maxlength="40" tabindex="16" required/></td>
+                            <td><input type="text" name="ugRollno" placeholder="Registration. No"  tabindex="17" required/></td>
+                            <td><input type="number" name="ugYearOfPassing" placeholder="YYYY"  min="1947" max="2030" tabindex="18" required/></td>
+                            <td><input type="text" name="ugPercentage" placeholder="Percentage"  tabindex="19" required/></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Work Experience details</legend>
+                    <table class="userinfo-form__workinfo-table">
+                        <tr>
+                            <th>Organization</th>
+                            <th>Profile</th>
+                            <th>Experience(Yrs)</th>
+                            <th>Location</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="txtbOrganizaion" placeholder="Organizaion Name"  tabindex="20" required/></td>
+                            <td><input type="text" name="txtbProfile" placeholder="Job Profile"  tabindex="21" required/></td>
+                            <td><input type="text" name="txtbExperience" placeholder="Experience in years"  tabindex="22" required/></td>
+                            <td><input type="text" name="txtbLocation" placeholder="Job Loaction"  tabindex="23" required/></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <div class="userinfo-form__footer-form">
+                    <input type="submit" name="txtbSubmit" class="submit-button" value="Subimt" tabindex="24">
+                    <input type="reset" name="txtbReset" class="reset-button" value="Reset" tabindex="25">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
