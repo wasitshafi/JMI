@@ -1,16 +1,12 @@
 <web-app>
     <servlet>
-        <servlet-name></servlet-name>
-        <servlet-class></servlet-class>
+        <servlet-name>CookiesDemo</servlet-name>
+        <servlet-class>Cookies</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name></servlet-name>
+        <servlet-name>CookiesDemo</servlet-name>
         <url-pattern>/urldemo</url-pattern>
     </servlet-mapping>
-    <init-param>
-        <param-name></param-name>
-        <param-value></param-value>
-    </init-param>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
