@@ -1,0 +1,40 @@
+Setup :
+   Video Link : 
+   Download 'servlet-api.jar' file & extract it.
+   Use cmd 'sudo nautilus' to get admin root access. 
+   Move the extracted file in '/usr/share/java'
+**********************************************************************
+
+Compilation (Without Setting CLASSPATH):
+   javac HelloWorld.java -classpath /usr/share/java/servlet-api.jar
+                  or
+   javac -classpath /usr/share/java/servlet-api.jar HelloWorld.java
+**********************************************************************
+
+CLASSPATH Variable(Have To Setup Each Time) 
+   cmd : export CLASSPATH="$CLASSPATH:/usr/share/java/servlet-api.jar" >> ~/.bashrc
+
+CLASSPATH Variable(Permanent) 
+   Simply export in .bashrc file by appendding "export CLASSPATH="$CLASSPATH:/usr/share/java/servlet-api.jar"
+**********************************************************************
+
+To View CLASSPATH
+   cmd : echo $CLASSPATH
+
+Creating 'war' File :
+jar "-cvf demoProject.war *" to create a war file.
+**********************************************************************
+
+$$$$$$$$$$$$$$$$$$$$$$$ WORKING $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Installed Tomcat from : https://tecadmin.net/install-tomcat-9-on-ubuntu/
+
+1) Download tomcat9 tar file directly instead of using "wget"
+   the make sure its file name matches in cmd"tar xzf apache-tomcat-9.0.33.tar.gz" Download link[ https://www.apache.org/dist/tomcat/tomcat-9/v9.0.33/bin/apache-tomcat-9.0.33.tar.gz.sha512 ]
+
+2) echo "export JAVA_HOME="/usr/lib/jvm/java-11-oracle"" >> ~/.bashrc
+   As i had java-12-oracle installed so uses cmd "export JAVA_HOME="/usr/lib/jvm/java-12-oracle"" >> ~/.bashrc"
+
+3) After "source ~/.bashrc" it was showing an error so i appended "fi" the closing of outer if was missing
+   then try cmd "source ~/.bashrc" it will work.
+4) Now setup username and skip Enable Host/Manager for Remote IP, Now jump to Starting Tomcat Service.
+5) Access tomcat from browser
