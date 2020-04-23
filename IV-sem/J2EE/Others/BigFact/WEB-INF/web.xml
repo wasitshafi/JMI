@@ -1,0 +1,15 @@
+<web-app>
+    <servlet>
+        <servlet-name>Factorial</servlet-name>
+        <servlet-class>BigFactorial</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Factorial</servlet-name>
+        <url-pattern>/factorial</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
