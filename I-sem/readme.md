@@ -15,7 +15,7 @@ Q1.   _[Write a program that reads in two integers and determines and prints the
     operators and functions).](C%20Programming/Assignments/jmi_p1.c "View Code")_
 
 Q2.   _[Write a program that enters three different integers from the keyboard, and then prints the sum, the average, the 
-    product, the smallest and the largest of these numbers.](Assignments/jmi_p2.c "View Code")_
+    product, the smallest and the largest of these numbers.](C%20Programming/Assignments/jmi_p2.c "View Code")_
     
 Q3.   _[Write a program that reads in radius of a circle and prints circle's diameter, circumference and area.
 ](Assignments/jmi_p3.c  "View Code")_
