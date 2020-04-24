@@ -1,6 +1,6 @@
+># <div align="center"> C Programming </div>
 
-
-> ## **C Programming Assignments by _[Dr.Syed Zeeshan Hussain](https://www.jmi.ac.in/computerscience/faculty-members/Dr_Syed_Zeeshan_Hussain-2203 "See Profile")_**
+> ## **Assignments by _[Dr.Syed Zeeshan Hussain](https://www.jmi.ac.in/computerscience/faculty-members/Dr_Syed_Zeeshan_Hussain-2203 "See Profile")_**
 
 <div align="center">MCA SEMESTER-II, 2018-19</div>
 <br/>
