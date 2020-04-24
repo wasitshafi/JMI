@@ -135,7 +135,7 @@ Q54.   _[](Assignments/jmi_p54.c "View Code")_
 Q55.   _[](Assignments/jmi_p55.c "View Code")_
 
 
-## **Drop me a line at *** <wasitshafi185290@st.jmi.ac.in>
+#### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
 <!-- Template 
 Q3.   _[](Assignments/jmi_p3.c "View Code")_
 
