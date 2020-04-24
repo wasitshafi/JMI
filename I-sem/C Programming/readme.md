@@ -1,9 +1,11 @@
+<!--
+
 > ## **C Programming Assignments by _[Dr.Syed Zeeshan Hussain](https://www.jmi.ac.in/computerscience/faculty-members/Dr_Syed_Zeeshan_Hussain-2203 "See Profile")_**
 
--> MCA SEMESTER-II, 2018-19 <-
+<div align="center">MCA SEMESTER-II, 2018-19</div>
 <br/>
 
--> LAB ASSIGNMENT FOR PROBLEM SOLVING AND PROGRAMMING IN C <-
+<div align="center">LAB ASSIGNMENT FOR PROBLEM SOLVING AND PROGRAMMING IN C</div>
 
 ***
 
@@ -136,7 +138,11 @@ Q55.   _[](Assignments/jmi_p55.c "View Code")_
 
 
 #### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
+
+-->
+
+
 <!-- Template 
-Q3.   _[](Assignments/jmi_p3.c "View Code")_
+Q#.   _[](Assignments/jmi_p#.c "View Code")_
 
 -->
