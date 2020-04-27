@@ -46,7 +46,7 @@ Q9.   _[A palindrome is a number or text phrase that reads the same backwards an
 
 Q10.   _[Write a program to accept a binary number and convert it into its decimal, octal and hexadecimal equivalent.](C%20Programming/Assignments/jmi_p10.c "View Code")_
 
-Q11.   _[Write a program that reads an integer m and a single digit say n and determines how many digits in integer m are n(s).](C%20Programming/Assignments/jmi_11.c "View Code")_
+Q11.   _[Write a program that reads an integer m and a single digit say n and determines how many digits in integer m are n(s).](C%20Programming/Assignments/jmi_p11.c "View Code")_
 
 Q12.   _[Write a program that reads three non-zero integers and determines and prints if they could represent the sides of a 
     triangle.](C%20Programming/Assignments/jmi_p12.c "View Code")_
@@ -87,7 +87,7 @@ Q24.   _[Write a recursive function to compute average of n-array of floats.](C%
 
 Q25.   _[Write a recursive function to compute GCD of two integers.](C%20Programming/Assignments/jmi_p25.c "View Code")_
 
-Q26.   _[Write a recursive function to convert a number from a given base to another base.](C%20Programming/Assignments/jmi_p26.c "View Code")_
+Q26.   _Write a recursive function to convert a number from a given base to another base._
 
 Q27.   _[Write a recursive function to show the possible movements of disk of Tower of Hanoi from one needle to another needle for n disks.](C%20Programming/Assignments/jmi_p27.c "View Code")_
 
@@ -121,20 +121,20 @@ Q39.   _[Write a recursive function to find maximum from an array of n-elements.
 > ### POINTERS:
 Q40.   _[Write a function to compare two strings.](C%20Programming/Assignments/jmi_p40.c "View Code")_
 
-Q41.   _[Write a function to find length of a string.](C%20Programming/Assignments/jmi_p41-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p41-2.c "View Code")**
+Q41.   _[Write a function to find length of a string.](C%20Programming/Assignments/jmi_p41.c "View Code")_
 
-Q42.   _[Write a function to find frequency of each character in a string.](C%20Programming/Assignments/jmi_p42.c "View Code")_
+Q42.   _[Write a function to find frequency of each character in a string.](C%20Programming/Assignments/jmi_p42-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p42-2.c "View Code")**
 
 Q43.   _[Write a function that counts number of white spaces in a string.](C%20Programming/Assignments/jmi_p43.c "View Code")_
 
 Q44.   _[Write a program that reads date in dd/mm/yyyy format and prints the date in dd MonthName, YYYY format.](C%20Programming/Assignments/jmi_p44.c "View Code")_
 
-Q45.   _[Write a program that prints word equvalent of an amount.](C%20Programming/Assignments/jmi_p45.c "View Code")_
+Q45.   _Write a program that prints word equvalent of an amount._
 
 > ### STRUCTURES:
-Q46.   _[Write a program to implement all arithmetic operations on Rational Numbers.](C%20Programming/Assignments/jmi_p46.c "View Code")_
+Q46.   _Write a program to implement all arithmetic operations on Rational Numbers._
 
-Q47.   _[Write a program to implement all arithmetic operations on Complex Numbers.](C%20Programming/Assignments/jmi_p47.c "View Code")_
+Q47.   _Write a program to implement all arithmetic operations on Complex Numbers._
 
 Q48.   _Write a program to implement all Date functions._
 
