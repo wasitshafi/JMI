@@ -150,7 +150,13 @@ Q52.   _[Write a program to generate pay silp of employee. Use suitable assumpti
 Q53.   _Write a program for inventory control. Use suitable assumptions._
 Q54.   _Write a program that is equivalent to <i>ls</i> command of linux._
 
-Q55.   _Write a program that is equivalent to <i>FIND</i> command of Linux._
+Q55.   _Write a program that is equivalent to <i>FIND</i> command of Linux._<br/><br/><br/>
+      **[View Misc. Programs](C%20Programming/Misc.(Practice%20Programs)/ "View Code")**
+<hr/>
+
+
+
+
 
 
 #### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
