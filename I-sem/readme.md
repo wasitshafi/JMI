@@ -1,5 +1,5 @@
-># <div align="center"><span style="color:red">**C Programming**</span> </div>
->> ## Assignments by _[Dr.Syed Zeeshan Hussain](https://www.jmi.ac.in/computerscience/faculty-members/Dr_Syed_Zeeshan_Hussain-2203 "See Profile")_
+># <div align="center">**C Programming**</div>
+>> ### Assignments by _[Dr.Syed Zeeshan Hussain](https://www.jmi.ac.in/computerscience/faculty-members/Dr_Syed_Zeeshan_Hussain-2203 "See Profile")_
 
 <div align="center">MCA SEMESTER-II, 2018-19</div>
 <br/>
@@ -7,6 +7,8 @@
 <div align="center">LAB ASSIGNMENT FOR PROBLEM SOLVING AND PROGRAMMING IN C</div>
 
 ***
+
+**[View All Assignments](C%20Programming/Assignments/ "View Code")**
 
 > ### VARIABLES, OPERATORS AND INPUT/OUTPUT FUNCTIONS.
 
