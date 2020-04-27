@@ -16,15 +16,15 @@ Q1.   _[Write a program that reads in two integers and determines and prints the
     operators and functions).](C%20Programming/Assignments/jmi_p1.c "View Code")_
 
 Q2.   _[Write a program that enters three different integers from the keyboard, and then prints the sum, the average, the 
-    product, the smallest and the largest of these numbers.](C%20Programming/Assignments/jmi_p2.c "View Code")_
+    product, the smallest and the largest of these numbers.](C%20Programming/Assignments/jmi_p2-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p2-2.c "View Code")**
     
 Q3.   _[Write a program that reads in radius of a circle and prints circle's diameter, circumference and area.
 ](C%20Programming/Assignments/jmi_p3.c  "View Code")_
 
-Q4.   _[Write a program that accepts a character and prints its decimal, octal and hexadecimal equivalent.](C%20Programming/Assignments/jmi_p4.c "View Code")_
+Q4.   _[Write a program that accepts a character and prints its decimal, octal and hexadecimal equivalent.](C%20Programming/Assignments/jmi_p4-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p4-2.c "View Code")**
 
 Q5.   _[A company pays its salesman on a commission basis. The salesperson receives RS 10001= per week plus a (% of their 
-    gross sales for that week. Write a program that will input each salesperson's gross sales for last week and will calculate and display the salesperson's earning.](C%20Programming/Assignments/jmi_p5.c "View Code")_
+    gross sales for that week. Write a program that will input each salesperson's gross sales for last week and will calculate and display the salesperson's earning.](C%20Programming/Assignments/jmi_p5-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p5-2.c "View Code")**
 
 > ### CONTROL STRUCTURE
 
@@ -32,7 +32,7 @@ Q6.   _[Write a program that determines the GrossPay for each of the several emp
     for the first 40 hours worked by each employee and pays "time-and-half" for all hours worked in excess of 40 hours. 
     You are given a list of the employees of the company, number of hours each employee worked last week and the 
     hourly rate of all employees. Your program should input the information for each employee and display the employee's 
-    gross salary.](C%20Programming/Assignments/jmi_p6.c "View Code")_
+    gross salary.](C%20Programming/Assignments/jmi_p6-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p6-2.c "View Code")**
 
 Q7.   _[A program that determines the winner of sales contest would input the number of units sold by each salesperson. The 
     salesperson who sells the most units wins the contest. Write a program that inputs employee number and sales unit of 
@@ -97,9 +97,9 @@ Q29.   _[Write a recursive function to check whether a given word is palindrome 
 
 > ### ARRAYS
 
-Q30.   _[Use single scripted variable to solve the following problem. A company pays its saleperson on a commission basis.The salesperson receives RS.1000=/ per week plus 9% of their gross sales for that week .Write a programe that will take input each salesperson's gross sales for the last week and determines how many of the salesperson's gross sales for the last week and also determines how many of salesperson earned salaries in each of the followingrange (Assume that Salesperson's salary is truncated to an integer amount).<br/>Rs1200-1299, 1300-1399, 1400-1499, 1500-1599,......2000 and over.](C%20Programming/Assignments/jmi_p30.c "View Code")_
+Q30.   _[Use single scripted variable to solve the following problem. A company pays its saleperson on a commission basis.The salesperson receives RS.1000=/ per week plus 9% of their gross sales for that week .Write a programe that will take input each salesperson's gross sales for the last week and determines how many of the salesperson's gross sales for the last week and also determines how many of salesperson earned salaries in each of the followingrange (Assume that Salesperson's salary is truncated to an integer amount).<br/>Rs1200-1299, 1300-1399, 1400-1499, 1500-1599,......2000 and over.](C%20Programming/Assignments/jmi_p30-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p30-2.c "View Code")**
 
-Q31.   _[Write a program to search an element using linear search.](C%20Programming/Assignments/jmi_p31.c "View Code")_
+Q31.   _[Write a program to search an element using linear search.](C%20Programming/Assignments/jmi_p31-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p31-2.c "View Code")**
 
 Q32.   _[Write a program to search an element using binary search.](C%20Programming/Assignments/jmi_p32.c "View Code")_
 
@@ -121,7 +121,7 @@ Q39.   _[Write a recursive function to find maximum from an array of n-elements.
 > ### POINTERS:
 Q40.   _[Write a function to compare two strings.](C%20Programming/Assignments/jmi_p40.c "View Code")_
 
-Q41.   _[Write a function to find length of a string.](C%20Programming/Assignments/jmi_p41.c "View Code")_
+Q41.   _[Write a function to find length of a string.](C%20Programming/Assignments/jmi_p41-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p41-2.c "View Code")**
 
 Q42.   _[Write a function to find frequency of each character in a string.](C%20Programming/Assignments/jmi_p42.c "View Code")_
 
