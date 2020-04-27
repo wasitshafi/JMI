@@ -51,11 +51,11 @@ Q11.   _[Write a program that reads an integer m and a single digit say n and de
 Q12.   _[Write a program that reads three non-zero integers and determines and prints if they could represent the sides of a 
     triangle.](C%20Programming/Assignments/jmi_p12.c "View Code")_
 
-Q13.   _[A Company wants to transmit data over telephone but they are concerned that their phone may be tapped. All of their 
+Q13.   _A Company wants to transmit data over telephone but they are concerned that their phone may be tapped. All of their 
     data is transmitted as four digit integers. They have asked you to write a program that will encrypt their data so that it may be transmitted more securely. Your program should read a four digits integer and encrypt it as follows:<br><br>Replace each digit by (the sum of that digit and 7) modulus 10.
 <br>Then swap the first digit with third, and second with the fourth. Write a program for it.
 <br>Then print the encrypted integer. Write a separate program that inputs an encrypted four-digit integer, and decrypt it 
-     to form the original number.](C%20Programming/Assignments/jmi_p13.c "View Code")_
+     to form the original number._
 
 Q14.   _[Write a Program that finds all prime divisors of number.](C%20Programming/Assignments/jmi_p14.c "View Code")_
 
@@ -111,7 +111,7 @@ Q35.   _[Write a program to sort an array using Bubble Sort.](C%20Programming/As
 
 Q36.   _[Write a program to add, subtract and multiply two matrices using one-dimensional array.](C%20Programming/Assignments/jmi_p36.c "View Code")_
 
-Q37.   _[Write a program to find inverse of a matrix.](C%20Programming/Assignments/jmi_p37.c "View Code")_
+Q37.   _Write a program to find inverse of a matrix._
 
 Q38.   _[Write a program to generate a circular matrix.](C%20Programming/Assignments/jmi_p38.c "View Code")_
 
@@ -136,7 +136,7 @@ Q46.   _[Write a program to implement all arithmetic operations on Rational Numb
 
 Q47.   _[Write a program to implement all arithmetic operations on Complex Numbers.](C%20Programming/Assignments/jmi_p47.c "View Code")_
 
-Q48.   _[Write a program to implement all Date functions.](C%20Programming/Assignments/jmi_p48.c "View Code")_
+Q48.   _Write a program to implement all Date functions._
 
 > ### FILES
 Q49.   _[Write a program to copy content of one file to another file.](C%20Programming/Assignments/jmi_p49.c "View Code")_
@@ -147,11 +147,10 @@ Q51.   _[Write a program to count number of keywords in a C program.](C%20Progra
 
 Q52.   _[Write a program to generate pay silp of employee. Use suitable assumption.](C%20Programming/Assignments/jmi_p52.c "View Code")_
 
-Q53.   _[Write a program for inventory control. Use suitable assumptions.](C%20Programming/Assignments/jmi_p53.c "View Code")_
+Q53.   _Write a program for inventory control. Use suitable assumptions._
+Q54.   _Write a program that is equivalent to <i>ls</i> command of linux._
 
-Q54.   _[Write a program that is equivalent to <i>ls</i> command of linux.](C%20Programming/Assignments/jmi_p54.c "View Code")_
-
-Q55.   _[Write a program that is equivalent to <i>FIND</i> command of Linux.](C%20Programming/Assignments/jmi_p55.c "View Code")_
+Q55.   _Write a program that is equivalent to <i>FIND</i> command of Linux._
 
 
 #### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
