@@ -24,8 +24,7 @@ Q3.   _[Write a program that reads in radius of a circle and prints circle's dia
 Q4.   _[Write a program that accepts a character and prints its decimal, octal and hexadecimal equivalent.](C%20Programming/Assignments/jmi_p4.c "View Code")_
 
 Q5.   _[A company pays its salesman on a commission basis. The salesperson receives RS 10001= per week plus a (% of their 
-    gross sales for that week. Write a program that will input each salesperson's gross sales for last week and will calculate 
-    and display the salesperson's earning.](C%20Programming/Assignments/jmi_p5.c "View Code")_
+    gross sales for that week. Write a program that will input each salesperson's gross sales for last week and will calculate and display the salesperson's earning.](C%20Programming/Assignments/jmi_p5.c "View Code")_
 
 > ### CONTROL STRUCTURE
 
@@ -47,14 +46,13 @@ Q9.   _[A palindrome is a number or text phrase that reads the same backwards an
 
 Q10.   _[Write a program to accept a binary number and convert it into its decimal, octal and hexadecimal equivalent.](C%20Programming/Assignments/jmi_p10.c "View Code")_
 
-Q11.   _[Write a program that reads an integer m and a single digit say n and determines how many digits in integer m are n(s). ](C%20Programming/Assignments/jmi_11.c "View Code")_
+Q11.   _[Write a program that reads an integer m and a single digit say n and determines how many digits in integer m are n(s).](C%20Programming/Assignments/jmi_11.c "View Code")_
 
 Q12.   _[Write a program that reads three non-zero integers and determines and prints if they could represent the sides of a 
-    triangle](C%20Programming/Assignments/jmi_p12.c "View Code")_
+    triangle.](C%20Programming/Assignments/jmi_p12.c "View Code")_
 
 Q13.   _[A Company wants to transmit data over telephone but they are concerned that their phone may be tapped. All of their 
-    data is transmitted as four digit integers. They have asked you to write a program that will encrypt their data so that it 
-    may be transmitted more securely. Your program should read a four digits integer and encrypt it as follows:<br><br>Replace each digit by (the sum of that digit and 7) modulus 10.
+    data is transmitted as four digit integers. They have asked you to write a program that will encrypt their data so that it may be transmitted more securely. Your program should read a four digits integer and encrypt it as follows:<br><br>Replace each digit by (the sum of that digit and 7) modulus 10.
 <br>Then swap the first digit with third, and second with the fourth. Write a program for it.
 <br>Then print the encrypted integer. Write a separate program that inputs an encrypted four-digit integer, and decrypt it 
      to form the original number.](C%20Programming/Assignments/jmi_p13.c "View Code")_
@@ -67,14 +65,14 @@ Q16.   _[Write a Program to compute first N numbers of Fibonacci series.](C%20Pr
 
 > ### FUNCTIONS:
 
-Q17.   _[Write a function that returns smallest of three integers](C%20Programming/Assignments/jmi_p17.c "View Code")_
+Q17.   _[Write a function that returns smallest of three integers.](C%20Programming/Assignments/jmi_p17.c "View Code")_
 
 Q18.   _[An integer is said to be a perfect number if its factors, including 1(but not number itself), sum to the number, for example 6 is a perfect number because 6=1+2+3. Write a function perfect that determines if parameter number is a 
     perfect number. Use this function in a program that factor of each perfect number o confirm that the number is indeed 
     perfect.](C%20Programming/Assignments/jmi_p18.c "View Code")_
 
 Q19.   _[Write a function that determines if a number is prime or not. Write a program that prints all prime numbers lying 
-    between 1 and 10,000](C%20Programming/Assignments/jmi_p19.c "View Code")_
+    between 1 and 10,000.](C%20Programming/Assignments/jmi_p19.c "View Code")_
 
 Q20.   _[Write a function that takes an integer value and returns the number with its digits reversed.](C%20Programming/Assignments/jmi_p20.c "View Code")_
 
@@ -134,26 +132,26 @@ Q44.   _[Write a program that reads date in dd/mm/yyyy format and prints the dat
 Q45.   _[Write a program that prints word equvalent of an amount.](C%20Programming/Assignments/jmi_p45.c "View Code")_
 
 > ### STRUCTURES:
-Q46.   _[](C%20Programming/Assignments/jmi_p46.c "View Code")_
+Q46.   _[Write a program to implement all arithmetic operations on Rational Numbers.](C%20Programming/Assignments/jmi_p46.c "View Code")_
 
-Q47.   _[](C%20Programming/Assignments/jmi_p47.c "View Code")_
+Q47.   _[Write a program to implement all arithmetic operations on Complex Numbers.](C%20Programming/Assignments/jmi_p47.c "View Code")_
 
-Q48.   _[](C%20Programming/Assignments/jmi_p48.c "View Code")_
+Q48.   _[Write a program to implement all Date functions.](C%20Programming/Assignments/jmi_p48.c "View Code")_
 
 > ### FILES
-Q49.   _[](C%20Programming/Assignments/jmi_p49.c "View Code")_
+Q49.   _[Write a program to copy content of one file to another file.](C%20Programming/Assignments/jmi_p49.c "View Code")_
 
-Q50.   _[](C%20Programming/Assignments/jmi_50.c "View Code")_
+Q50.   _[Write a program to rename a file.](C%20Programming/Assignments/jmi_50.c "View Code")_
 
-Q51.   _[](C%20Programming/Assignments/jmi_p51.c "View Code")_
+Q51.   _[Write a program to count number of keywords in a C program.](C%20Programming/Assignments/jmi_p51.c "View Code")_
 
-Q52.   _[](C%20Programming/Assignments/jmi_p52.c "View Code")_
+Q52.   _[Write a program to generate pay silp of employee. Use suitable assumption.](C%20Programming/Assignments/jmi_p52.c "View Code")_
 
-Q53.   _[](C%20Programming/Assignments/jmi_p53.c "View Code")_
+Q53.   _[Write a program for inventory control. Use suitable assumptions.](C%20Programming/Assignments/jmi_p53.c "View Code")_
 
-Q54.   _[](C%20Programming/Assignments/jmi_p54.c "View Code")_
+Q54.   _[Write a program that is equivalent to <i>ls</i> command of linux.](C%20Programming/Assignments/jmi_p54.c "View Code")_
 
-Q55.   _[](C%20Programming/Assignments/jmi_p55.c "View Code")_
+Q55.   _[Write a program that is equivalent to <i>FIND</i> command of Linux.](C%20Programming/Assignments/jmi_p55.c "View Code")_
 
 
 #### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
