@@ -1,7 +1,7 @@
 //
 //jmi_p5-1.c on 09-08-18
 //
-//program to
+//
 #include <stdio.h>
 
 int main()
@@ -10,10 +10,10 @@ int main()
 
 	int gross_sales, net_income;
 
-	printf("Enter name of Employee :\t");
+	printf("Enter name of Employee : ");
 	scanf("%[^\n]", name);
 
-	printf("\nEnter gross sales of %s :\t", name);
+	printf("Enter gross sales of %s : ", name);
 	scanf("%d", &gross_sales);
 
 	net_income = 1000 + ( gross_sales * 10 / 100 );
