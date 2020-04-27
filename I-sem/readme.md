@@ -141,9 +141,9 @@ Q48.   _Write a program to implement all Date functions._
 > ### FILES
 Q49.   _[Write a program to copy content of one file to another file.](C%20Programming/Assignments/jmi_p49.c "View Code")_
 
-Q50.   _[Write a program to rename a file.](C%20Programming/Assignments/jmi_50.c "View Code")_
+Q50.   _[Write a program to rename a file.](C%20Programming/Assignments/jmi_p50.c "View Code")_
 
-Q51.   _[Write a program to count number of keywords in a C program.](C%20Programming/Assignments/jmi_p51.c "View Code")_
+Q51.   _Write a program to count number of keywords in a C program._
 
 Q52.   _[Write a program to generate pay silp of employee. Use suitable assumption.](C%20Programming/Assignments/jmi_p52.c "View Code")_
 
