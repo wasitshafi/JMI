@@ -1,0 +1,9 @@
+Q. write a program to read number from a file data and store even numbers in a file named even and odd numbers into a file named odd.
+A. see programe 'file_even_odd_numbers.c'
+123456789123456789     456456456
+456456 456465
+45645
+45645   789 78989          456
+456
+456
+456   56
