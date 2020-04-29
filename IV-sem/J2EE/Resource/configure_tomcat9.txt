@@ -38,3 +38,8 @@ Installed Tomcat from : https://tecadmin.net/install-tomcat-9-on-ubuntu/
    then try cmd "source ~/.bashrc" it will work.
 4) Now setup username and skip Enable Host/Manager for Remote IP, Now jump to Starting Tomcat Service.
 5) Access tomcat from browser
+
+$$$$$$$$$$$$$$$$$$$$$$$ IntelliJ IDEA Ultimate $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Configuration         : https://www.jetbrains.com/help/idea/configuring-and-managing-application-server-integration.html
+Fix-Server port error : https://stackoverflow.com/questions/58582457/tomcat-9-027-port-out-of-range
+First web project     : https://www.youtube.com/watch?v=OuyBNViALZA
