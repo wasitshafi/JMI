@@ -1,4 +1,3 @@
-<!--
 
 ># <div align="center">**C Programming**</div>
 >> ### Assignments by _[Dr.Syed Zeeshan Hussain](https://www.jmi.ac.in/computerscience/faculty-members/Dr_Syed_Zeeshan_Hussain-2203 "See Profile")_
@@ -164,7 +163,7 @@ Q55.   _Write a program that is equivalent to <i>FIND</i> command of Linux._<br/
 #### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
 
 
--->
+
 <!-- Template 
 Q#.   _[](C%20Programming/Assignments/jmi_p#.c "View Code")_
 
