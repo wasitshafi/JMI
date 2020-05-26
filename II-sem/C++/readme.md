@@ -13,9 +13,8 @@
 
 > ### Class, object, Function
 
-_[Q1. Write an inline function to obtain largest of three numbers.](Assignments/Assig.%20I/jmi_p1.cpp "View Code")_
-
-_[Q2. Write a function called hms_to_secs() that takes three int values—for hours, minutes, and seconds—as arguments, and returns the equivalent time in seconds (type long). Create a program that exercises this function by repeatedly obtaining a time value in hours, minutes, and seconds from the user (format 12:59:59), calling the function, and displaying the value of seconds it returns](Assignments/Assig.%20I/jmi_p2.cpp "View Code")_
+[Q1. Write an inline function to obtain largest of three numbers.](Assignments/Assig.%20I/jmi_p1.cpp "View Code")
+[Q2. Write a function called hms_to_secs() that takes three int values—for hours, minutes, and seconds—as arguments, and returns the equivalent time in seconds (type long). Create a program that exercises this function by repeatedly obtaining a time value in hours, minutes, and seconds from the user (format 12:59:59), calling the function, and displaying the value of seconds it returns](Assignments/Assig.%20I/jmi_p2.cpp "View Code")
 _<a href= "Assignments/Assig.%20I/jmi_p3.cpp" title = "View Code"><div>Q3. Define a class to represent a bank account. It contains
   + Data Members:
     - Name of the depositor 
@@ -27,8 +26,8 @@ _<a href= "Assignments/Assig.%20I/jmi_p3.cpp" title = "View Code"><div>Q3. Defin
     - To deposit an amount 
     - To withdraw an amount < amount available 
     - Display the name and balance.
-    </div></a>_
-_<a href= "Assignments/Assig.%20I/jmi_p4.cpp" title = "View Code"><div>Q.4  Create a bank account by supplying a user id and password. 
+    </div></a>
+<a href= "Assignments/Assig.%20I/jmi_p4.cpp" title = "View Code"><div>Q.4  Create a bank account by supplying a user id and password. 
 Login using their id and password. 
 Quit the program. 
 Now if login was successful the user will be able to do the following: 
@@ -37,13 +36,13 @@ Now if login was successful the user will be able to do the following:
 - Request balance.
 
 Quit the program.
-If login was not successful (for example the id or password did not match) then the user will be taken back to the introduction menu. </div></a>_
-_<a href= "Assignments/Assig.%20I/jmi_p5.cpp" title = "View Code"><div>Q.5 Create a class to add Two times provided in hour minute format. Use functions
+If login was not successful (for example the id or password did not match) then the user will be taken back to the introduction menu. </div></a>
+<a href= "Assignments/Assig.%20I/jmi_p5.cpp" title = "View Code"><div>Q.5 Create a class to add Two times provided in hour minute format. Use functions
 a) void input() to provide hour and minute.  
 b) void gettime(int ,int) to take hour and minute entered by user. 
 c) sum(time <oj>, time <ob> )  to add minutes and hours. If minutes is > 60 add 1 with hour.
-d) void display()   to display the result. </div></a>_
-_<a href= "Assignments/Assig.%20I/jmi_p6.cpp" title = "View Code"><div>Q.6 To write a C++ program to add two complex numbers using object as argument.
+d) void display()   to display the result. </div></a>
+<a href= "Assignments/Assig.%20I/jmi_p6.cpp" title = "View Code"><div>Q.6 To write a C++ program to add two complex numbers using object as argument.
 **Algorithm:**
 **class** as complex. 
 **data members** as real and img. 
