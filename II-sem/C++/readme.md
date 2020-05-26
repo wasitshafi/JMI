@@ -30,36 +30,36 @@
     - Display the name and balance.
     </div></a>
 <a href= "Assignments/Assig.%20I/jmi_p4.cpp" title = "View Code"><div>Q.4  Create a bank account by supplying a user id and password. 
-Login using their id and password. 
-Quit the program. 
-Now if login was successful the user will be able to do the following: 
-- Withdraw money. 
-- Deposit money. 
-- Request balance.
-
-Quit the program.
-If login was not successful (for example the id or password did not match) then the user will be taken back to the introduction menu. </div></a>
+Login using their id and password.
+  Quit the program.
+  Now if login was successful the user will be able to do the following: 
+    - Withdraw money. 
+    - Deposit money. 
+    - Request balance.
+  Quit the program.
+  If login was not successful (for example the id or password did not match) then the user will be taken back to the introduction menu. </div></a>
 <a href= "Assignments/Assig.%20I/jmi_p5.cpp" title = "View Code"><div>Q.5 Create a class to add Two times provided in hour minute format. Use functions
 a) void input() to provide hour and minute.  
 b) void gettime(int ,int) to take hour and minute entered by user. 
 c) sum(time <oj>, time <ob> )  to add minutes and hours. If minutes is > 60 add 1 with hour.
-d) void display()   to display the result. </div></a>
-<a href= "Assignments/Assig.%20I/jmi_p6.cpp" title = "View Code"><div>Q.6 To write a C++ program to add two complex numbers using object as argument.
-**Algorithm:**
-**class** as complex. 
-**data members** as real and img. 
-**member functions** 
-   - void getdata()  
-   - void show()  
-   - void sum(complex c1,complex c2)  
-   - getdata() method is used to get the values . 
-   - show() method is used to display the values. 
-   - sum() method is used to perform addition operation using object as argument. </div></a>_
-_<a href= "Assignments/Assig.%20I/jmi_p7.cpp" title = "View Code"><div>Q.7 To write a C++ program to display the student details using class and array of object. 
-**Algorithm:**
-**class** as student. 
-**data members rollno, name, mark1, mark2, mark3, total and average.  
-**member functions ** as getdata() and displaydata(). 
+d) void display() to display the result.</div></a>
+  <a href= "Assignments/Assig.%20I/jmi_p6.cpp" title = "View Code"><div>Q.6 To write a C++ program to add two complex numbers using object as argument.
+**Algorithm:**<br/>
+    **class** as complex. 
+    **data members** as real and img. 
+    **member functions** 
+     - void getdata()  
+     - void show()  
+     - void sum(complex c1,complex c2)  
+     - getdata() method is used to get the values . 
+     - show() method is used to display the values. 
+     - sum() method is used to perform addition operation using object as argument. </div></a>
+  
+  <a href= "Assignments/Assig.%20I/jmi_p7.cpp" title = "View Code"><div>Q.7 To write a C++ program to display the student details using class and array of object. 
+  **Algorithm:**
+  **class** as student. 
+  **data members rollno, name, mark1, mark2, mark3, total and average.  
+  **member functions ** as getdata() and displaydata(). 
             - getdata() method used to get the  student details. 
             - displaydata() method used to display the student details. 
 create an object array for the student class using the following  syntax:
@@ -67,8 +67,10 @@ create an object array for the student class using the following  syntax:
            Get the number of students. 
            Enter student details 
            display the student details  </div></a>_
-<a href= "Assignments/Assig.%20I/jmi_p8.cpp" title = "View Code"><div>Q.8 Re-write the time addition program using friend function.</div></a>
-<a href= "Assignments/Assig.%20I/jmi_p9.cpp" title = "View Code"><div>Q.9  write C++ program to define matrix and vector class, to use function with default argument and to do matrix -vector  multiplication using friend function.
+  
+  <a href= "Assignments/Assig.%20I/jmi_p8.cpp" title = "View Code"><div>Q.8 Re-write the time addition program using friend function.</div></a>
+
+  <a href= "Assignments/Assig.%20I/jmi_p9.cpp" title = "View Code"><div>Q.9  write C++ program to define matrix and vector class, to use function with default argument and to do matrix -vector  multiplication using friend function.
 - Declare vector Class 
 - Define matrix Class
 - Declare friend function multiply() inside the matrix class  
