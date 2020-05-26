@@ -14,9 +14,21 @@
 > ### Class, object, Function
 
 Q1.   _[Write an inline function to obtain largest of three numbers.](Assignments/Assig.%20I/jmi_p1.cpp "View Code")_
-Q2.   _[Write a function called hms_to_secs() that takes three int values—for hours, minutes, and seconds—as arguments, and returns the equivalent time in seconds (type long). Create a program that exercises this function by repeatedly obtaining a time value in hours, minutes, and seconds from the user (format 12:59:59), calling the function, and displaying the value of seconds it returns](Assignments/Assig.%20I/jmi_p2.cpp "View Code")_
-Q3.   _[](Assignments/Assig.%20I "View Code")_
 
+Q2.   _[Write a function called hms_to_secs() that takes three int values—for hours, minutes, and seconds—as arguments, and returns the equivalent time in seconds (type long). Create a program that exercises this function by repeatedly obtaining a time value in hours, minutes, and seconds from the user (format 12:59:59), calling the function, and displaying the value of seconds it returns](Assignments/Assig.%20I/jmi_p2.cpp "View Code")_
+Q3.   _[ Define a class to represent a bank account. It contains
+
+  + Data Members:
+  
+    - Name of the depositor 
+    - Account Number 
+    - Type of account 
+    - Balance 
+  + Member Functions: 
+    - To assign initial values 
+    - To deposit an amount 
+    - To withdraw an amount < amount available 
+    - Display the name and balance. ](Assignments/Assig.%20I/jmi_p3.cpp "View Code")_
 <hr/>
 
 
