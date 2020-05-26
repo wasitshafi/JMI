@@ -2,7 +2,7 @@
 ># <div align="center">**C Programming**</div>
 >> ### Taught by : _[Dr.Syed Zeeshan Hussain](https://www.jmi.ac.in/computerscience/faculty-members/Dr_Syed_Zeeshan_Hussain-2203 "See Profile")_
 
-<div align="center">MCA SEMESTER-II, 2018-19</div>
+<div align="center">MCA SEMESTER-I</div>
 <br/>
 
 <div align="center">LAB ASSIGNMENT FOR PROBLEM SOLVING AND PROGRAMMING IN C</div>
