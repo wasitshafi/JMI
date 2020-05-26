@@ -11,8 +11,7 @@
 
 **[View All Assignments](C%20Programming/Assignments/ "View Code")**
 
-> ### <div>VARIABLES, OPERATORS AND INPUT/OUTPUT FUNCTIONS.</div>
----
+> ### VARIABLES, OPERATORS AND INPUT/OUTPUT FUNCTIONS.
 
 Q1.   _[Write a program that reads in two integers and determines and prints the first is multiple of second (Note: Use only 
     operators and functions).](C%20Programming/Assignments/jmi_p1.c "View Code")_
@@ -29,7 +28,6 @@ Q5.   _[A company pays its salesman on a commission basis. The salesperson recei
     gross sales for that week. Write a program that will input each salesperson's gross sales for last week and will calculate and display the salesperson's earning.](C%20Programming/Assignments/jmi_p5-1.c "View Code")_**[Alternate Method Solution](C%20Programming/Assignments/jmi_p5-2.c "View Code")**
 
 > ### CONTROL STRUCTURE
-<hr/>
 
 Q6.   _[Write a program that determines the GrossPay for each of the several employees. The company pays "straight time" 
     for the first 40 hours worked by each employee and pays "time-and-half" for all hours worked in excess of 40 hours. 
