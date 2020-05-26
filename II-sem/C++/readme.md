@@ -14,8 +14,10 @@
 > ### Class, object, Function
 
 [Q1. Write an inline function to obtain largest of three numbers.](Assignments/Assig.%20I/jmi_p1.cpp "View Code")
+
 [Q2. Write a function called hms_to_secs() that takes three int values—for hours, minutes, and seconds—as arguments, and returns the equivalent time in seconds (type long). Create a program that exercises this function by repeatedly obtaining a time value in hours, minutes, and seconds from the user (format 12:59:59), calling the function, and displaying the value of seconds it returns](Assignments/Assig.%20I/jmi_p2.cpp "View Code")
-_<a href= "Assignments/Assig.%20I/jmi_p3.cpp" title = "View Code"><div>Q3. Define a class to represent a bank account. It contains
+
+<a href= "Assignments/Assig.%20I/jmi_p3.cpp" title = "View Code"><div>Q3. Define a class to represent a bank account. It contains
   + Data Members:
     - Name of the depositor 
     - Account Number 
@@ -65,8 +67,8 @@ create an object array for the student class using the following  syntax:
            Get the number of students. 
            Enter student details 
            display the student details  </div></a>_
-_<a href= "Assignments/Assig.%20I/jmi_p8.cpp" title = "View Code"><div>Q.8 Re-write the time addition program using friend function.</div></a>_
-_<a href= "Assignments/Assig.%20I/jmi_p9.cpp" title = "View Code"><div>Q.9  write C++ program to define matrix and vector class, to use function with default argument and to do matrix -vector  multiplication using friend function.
+<a href= "Assignments/Assig.%20I/jmi_p8.cpp" title = "View Code"><div>Q.8 Re-write the time addition program using friend function.</div></a>
+<a href= "Assignments/Assig.%20I/jmi_p9.cpp" title = "View Code"><div>Q.9  write C++ program to define matrix and vector class, to use function with default argument and to do matrix -vector  multiplication using friend function.
 - Declare vector Class 
 - Define matrix Class
 - Declare friend function multiply() inside the matrix class  
@@ -79,7 +81,7 @@ _<a href= "Assignments/Assig.%20I/jmi_p9.cpp" title = "View Code"><div>Q.9  writ
 - Define the multiply() to multiply matrix and vector<br/>
     • a. No of columns in the matrix should be equal to no. of elements in the vector<br/>
     • b. Apply the matrix-vector multiplication mechanism:<br/>
-    • For simplicity take the matrix as 3X3 and the vector as 1X3. </div></a>_
+    • For simplicity take the matrix as 3X3 and the vector as 1X3. </div></a>
 <hr/>
 
 
