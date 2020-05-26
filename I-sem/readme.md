@@ -11,7 +11,7 @@
 
 **[View All Assignments](C%20Programming/Assignments/ "View Code")**
 
-> ### VARIABLES, OPERATORS AND INPUT/OUTPUT FUNCTIONS.
+> ### <div>VARIABLES, OPERATORS AND INPUT/OUTPUT FUNCTIONS.</div>
 ---
 
 Q1.   _[Write a program that reads in two integers and determines and prints the first is multiple of second (Note: Use only 
