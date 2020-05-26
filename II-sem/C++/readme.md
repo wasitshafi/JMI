@@ -1,3 +1,37 @@
+
+># <div align="center">**OOP in C++**</div>
+>> ### Taught by : _[Dr.Syed Zeeshan Hussain](https://www.jmi.ac.in/computerscience/faculty-members/Dr_Syed_Zeeshan_Hussain-2203 "See Profile")_
+
+<div align="center">MCA SEMESTER-II</div>
+<br/>
+
+<div align="center">LAB ASSIGNMENT FOR OOP in C++</div>
+
+***
+
+**[View All Assignments](https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem/C%2B%2B/Assignments)**
+
+> ### Class, object, Function
+
+Q1.   _[Write an inline function to obtain largest of three numbers.](Assignments/Assig.%20I/jmi_p1.cpp "View Code")_
+Q2.   _[Write a function called hms_to_secs() that takes three int values—for hours, minutes, and seconds—as arguments, and returns the equivalent time in seconds (type long). Create a program that exercises this function by repeatedly obtaining a time value in hours, minutes, and seconds from the user (format 12:59:59), calling the function, and displaying the value of seconds it returns](Assignments/Assig.%20I/jmi_p2.cpp "View Code")_
+Q3.   _[](Assignments/Assig.%20I "View Code")_
+
+<hr/>
+
+
+
+#### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
+
+
+
+<!-- Template 
+Q#.   _[](Assignments/Assig.%20I "View Code")_
+
+-->
+
+<br/><br/><br/>
+---
 > # How to run program from linux terminal
 >  - **Method 1**
 >    - use cmd ``g++ filename.cpp`` hit enter now to run executable file use ``./a.out`` hit enter.
