@@ -2,8 +2,8 @@
 solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "Visit Website") (01-08-2018 to ...)**
 # **Quick Links :**
 
-+ **I-Semester**
-    - C Programming
++ **[I-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/I-sem)**
+    - [C Programming](https://github.com/wasitshafi/JMI-MCA/tree/master/I-sem/C%20Programming)
     
 + **II-Semester**
     - C++ Programming
