@@ -103,7 +103,125 @@ Create an object array for the student class using the following syntax :<br/><b
 <a href= "Assignments/Assig.%20II/jmi_p2.cpp" title = "View Code"><div>Q.2 A Bank gives 4% interest on current account and 6% interest on savings account. An additional 3% interest is provided for savings duration of 5 years and above. Using dynamic initialization of constructor write banking program using C++.</div></a>
 
 
-<a href= "Assignments/Assig.%20I/jmi_p9.cpp" title = "View Code"><div>Q.9 </div></a>
+> # III- Operator Overloading and Type Conversion
+<a href= "Assignments/Assig.%20III/jmi_p1.cpp" title = "View Code"><div>Q.1 Check whether a number is even or odd by overloading ! operator</div></a>
+
+<a href= "Assignments/Assig.%20III/jmi_p2.cpp" title = "View Code"><div>Q.2 ii) Check whether a number is prime or not by overloading -- operator
+[Hints Use the concept of overloading ! operator]. </div></a>
+
+<a href= "#"><div>Q.3 Add two complex number by overloading + operator</div></a>
+&amsp;&amsp;<a href= "Assignments/Assig.%20III/jmi_p3-a.cpp" title = "View Code"> a) Using Member function.</a>
+&amsp;&amsp;<a href= "Assignments/Assig.%20III/jmi_p3-b.cpp" title = "View Code">b) Using Friend Function.</a>
+
+
+<a href= "#"><div>Q.4 Class Distance consists of length in feet and inches. Class Distance contains
+i) one default constructor
+ii) one parameterized constructor
+iii) function getdata() to take the value of feet and inches.
+iv) function show() to display.
+</div></a>
+<a href= "Assignments/Assig.%20III/jmi_p4-a.cpp" title = "View Code">a) Overload < operator to compare two distances.</a>
+<a href= "Assignments/Assig.%20III/jmi_p4-b.cpp" title = "View Code">b) Overload += operator in the Distance class. </a></div></a>
+
+
+<a href= "Assignments/Assig.%20III/jmi_p5.cpp" title = "View Code"><div>Q.5Concatenate two strings by overloading + operator.
+&amsp;&amsp;<a href= "Assignments/Assig.%20III/jmi_p5-a.cpp" title = "View Code">  a) Overload ++ as prefix (++c1) and postfix (c1++) in some class.</a>
+&amsp;&amsp;<a href= "Assignments/Assig.%20III/jmi_p5-b.cpp" title = "View Code">  b) Overload == operator to compare two strings. </a>
+
+<a href= "Assignments/Assig.%20III/jmi_p6.cpp" title = "View Code"><div>Q.6 Write a program to convert a distance entered in Feet and Inches to Meter using class to basic data type conversion.</div></a>
+
+<a href= "#" title = "View Code"><div>Q.7 Two classes one is Civil_Time and Another is Railway_Time. Enter hours and minutes in Railway time(24 hour format) and display the time in Civil time(12 hour format with a.m. and p.m.) using one class type to another class type conversion.</div></a>
+
+
+
+
+> # IV- Inheritance 
+<a href= "Assignments/Assig.%20IV/jmi_p1.cpp" title = "View Code"><div>Q.1 Class student contains roll number, name and course as data member and Input_student and display_student as member function. A derived class exam is created from the class student with publicly inherited. The derived class contains mark1, mark2, mark3 as marks of three subjects and input_marks and display_result as member function. Create an array of object of the exam class and display the result of 5 students.</div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p2.cpp" title = "View Code"><div>Q.2 Try the same program with privately inheritance. </div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p3.cpp" title = "View Code"><div>Q.3 Write a program where derived class is a friend of base class. </div></a>
+
+<a href= "#" title = "View Code"><div>Q.4 Test whether the Base class be a friend of Derived class.</div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p5.cpp" title = "View Code"><div>Q.5 Class user contains data member name and age. A constructor with two arguments is used to assign name and age.<br/>
+&emsp;User are of two types a) Student and b) Teacher.
+  Class Student contains data member i)course ii) Roll Number and iii)Marks and method
+  display() to display data related to student.
+  class Teacher contains data member 
+    i) subject_assigned (May take this as an array) 
+    ii) contact_hour and method display() to display data related to teacher.
+Implement this program using base class constructor in derived class. </div></a>
+
+<a href= "#" title = "View Code"><div>Q.6 Base class ‘count’ contains a variable c. It contains a no argument constructor, one argument constructor, a method to return c and a operator overloading function for ++.
+  Derived class ‘counter’ access the value of c from base class constructor through its constructor and a operator overloading function for --. </div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p7.cpp" title = "View Code"><div>Q.7 Class Student contains data member Name, roll as protected.
+  Method get() to name & roll and display() to display name and roll.
+  Class Mark is publicly inherited from Student.
+  It contains protected data member mark1,mark2 i.e. marks of two subjects & get_marks() and display_marks() as public.
+  Class Result is publicly inherited from Mark.
+  It contains private data member total and two public method cal_result( ) to calculate total and display_result() with comment whether the student has passed or not.</div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p8.cpp" title = "View Code"><div>Q.8 Rewrite the program in 7 with method overriding. Take the methods in all classes are get() and display(). </div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p1.cpp" title = "View Code"><div>Q.9 Write a C++ program to implement the following level of inheritance.<img src="" /></div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p10.cpp" title = "View Code"><div>Q.10 A University and a Company have jointly taken a project.
+  Class University contains name of the university, department to which the project is assigned, person to whom the project is assigned. A function display is there to display the information.
+  Class Company contains name of the company, Number of Engineers assigned, amount invested to do the project. A function display is there to display the information.
+  Class Project is inherited from University and Company. It contains type of project, duration of project, amount granted to complete the project. A function display() displays the related information.
+  Write a C++ program to implement this and display all information except amount invested by company from Project class. 
+</div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p1.cpp" title = "View Code"><div>Q.11 Base1 and Base2 contains a public, protected and private data member. Base1 is a friend of Base2. class Derived is inherited from Base1 a Base2. Write a C++ program to check the accessibility of the data members of Base1 and Base2 from Derived</div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p1.cpp" title = "View Code"><div>Q.12 Result of a student is dependent on his examination mark and extracurricular marks. create four classes Student, Examination, Extracurricular, Result. The data members and methods of different classes are given below. 
+<img src=""/><br/>
+  class Examination and Extracurricular are inherited from Student and Result is multiplyinherited from Examination and Extracurricular. 
+ </div></a>
+
+<a href= "Assignments/Assig.%20IV/jmi_p1.cpp" title = "View Code"><div>Q.13 Test whether the diamond problem exist is Friend Class. </div></a>
+
+ 
+ 
+> # V- Pointer, Virtual Function and Polymorphism
+<a href= "Assignments/Assig.%20V/jmi_p1.cpp" title = "View Code"><div>Q.1 Write a program using this pointer to find out the least number obtained among three
+subjects. Use ternary operator. </div></a>
+
+<a href= "Assignments/Assig.%20V/jmi_p2-M1.cpp" title = "View Code"><div>Q.2 Class polygon contains data member width and height and public method set_value() to assign values to width and height.<br/>
+&emsp;class Rectangle and Triangle are inherited from polygon class. Both the classes contain public method calculate_area() to calculate the area of Rectangle and Triangle.Use base class pointer to access the derived class object and show the area calculated. </div></a> <a href= "Assignments/Assig.%20I/jmi_p2-M2.cpp" title = "View Code"><b>Alternate Solution</b></a>
+
+<a href= "Assignments/Assig.%20V/jmi_p3.cpp" title = "View Code"><div>Q.3 Write a program to create a class shape with functions to find area of and display the
+name of the shape and other essential component of the class. Create derived classes circle, rectangle and trapezoid each having overridden functions area and display. Write a suitable program to illustrate virtual functions. </div></a>
+
+<a href= "Assignments/Assig.%20V/jmi_p4.cpp" title = "View Code"><div>Q.4 Write a program with Student as abstract class and create derive classes Engineering, Medicine and Science from base class Student. Create the objects of the derived classes and process them and access them using array of pointer of type base class Student. </div></a>
+
+
+
+> # VI- Exception Handling
+<a href= "Assignments/Assig.%20VI/jmi_p1.cpp" title = "View Code"><div>Q.1 Two integers are taken from keyboard. Then perform division operation.<br/>
+&emsp;a) A try block to throw an exception when a wrong type of data is keyed.<br/>
+&emsp;b) When division by zero occurs.<br/>
+&emsp;write appropriate catch block to handle the exception thrown</div></a>
+<a href= "#" title = "View Code"><div>Q.2 Design stack and queue classes with necessary exception handling.</div></a>
+
+> # VII- Template
+<a href= "Assignments/Assig.%20VII/jmi_p9.cpp" title = "View Code"><div>Q.1 Design a class Template to find the largest among three numbers using ternary
+operator. 
+ </div></a>
+<a href= "Assignments/Assig.%20VII/jmi_p9.cpp" title = "View Code"><div>Q.2 Design a class Template to implement stack.</div></a>
+<a href= "Assignments/Assig.%20VII/jmi_p9.cpp" title = "View Code"><div>Q.3 Write a template to sort an array by ascending order.</div></a>
+<a href= "Assignments/Assig.%20VII/jmi_p9.cpp" title = "View Code"><div>Q.4 Design a template to find the largest among three numbers of different data types.</div></a>
+<a href= "#" title = "View Code"><div>Q.5 Design a template for calculating xy where x may be integer or float (not char or
+string) and y must be integer. Put appropriate alert for wrong data type. 
+</div></a>
+<a href= "#" title = "View Code"><div>Q.6 Design a template to show that integer/integer is integer by if any one of them is
+float it returns float.</div></a>
+
+
+
+<a href= "Assignments/Assig.%20I/jmi_p.cpp" title = "View Code"><div>Q. </div></a>
 
 
 
