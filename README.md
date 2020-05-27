@@ -5,6 +5,7 @@ solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "
 + **[I-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/I-sem)**
     - C Programming 
   
+  
 + **[II-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem)**
     - OOP in C++
     - Data &amp; File Structures
@@ -12,12 +13,12 @@ solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "
     - Operating System &amp; Shell Programming
     - System Analysis &amp; Design  
   
+  
 + **[III-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/III-sem)**
     - Advance Problem Solving Using Java Programming
     - DBMS With Oracle Based Programming
-    - Software Engineering
-    - Scientific &amp; Statistical Techniques Using Fortran 
     - Analysis &amp; Design of Algorithm
+    - Scientific &amp; Statistical Techniques Using Fortran 
     
     
 + **[IV-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/IV-sem)**
