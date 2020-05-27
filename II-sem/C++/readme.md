@@ -29,8 +29,8 @@
     - To withdraw an amount < amount available 
     - Display the name and balance.
     </div></a>
-  
-  <a href= "Assignments/Assig.%20I/jmi_p4.cpp" title = "View Code"><div>Q.4  Create a bank account by supplying a user id and password. 
+
+<a href= "Assignments/Assig.%20I/jmi_p4.cpp" title = "View Code"> <div>Q.4  Create a bank account by supplying a user id and password. 
 Login using their id and password.
   Quit the program.
   Now if login was successful the user will be able to do the following: 
@@ -40,13 +40,13 @@ Login using their id and password.
   Quit the program.
   If login was not successful (for example the id or password did not match) then the user will be taken back to the introduction menu. </div></a>
   
-  <a href= "Assignments/Assig.%20I/jmi_p5.cpp" title = "View Code"><div>Q.5 Create a class to add Two times provided in hour minute format. Use functions
+  <a href= "Assignments/Assig.%20I/jmi_p5.cpp" title = "View Code"> <div> Q.5 Create a class to add Two times provided in hour minute format. Use functions
 a) void input() to provide hour and minute.  
 b) void gettime(int ,int) to take hour and minute entered by user. 
 c) sum(time <oj>, time <ob> )  to add minutes and hours. If minutes is > 60 add 1 with hour.
 d) void display() to display the result.</div></a>
-    
-    <a href= "Assignments/Assig.%20I/jmi_p6.cpp" title = "View Code"><div>Q.6 To write a C++ program to add two complex numbers using object as argument.
+
+<a href= "Assignments/Assig.%20I/jmi_p6.cpp" title = "View Code"> <div> Q.6 To write a C++ program to add two complex numbers using object as argument.
 **Algorithm:**<br/>
     **class** as complex. 
     **data members** as real and img. 
