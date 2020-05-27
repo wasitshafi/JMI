@@ -218,29 +218,6 @@ string) and y must be integer. Put appropriate alert for wrong data type.
 float it returns float.</div></a>
 
 
-#### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
-<!-- Template 
-Q#.   _[](Assignments/Assig.%20I "View Code")_
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <br/><br/><br/>
@@ -268,3 +245,9 @@ Q#.   _[](Assignments/Assig.%20I "View Code")_
 >    - use cmd ``g++ mainprogramfile.cpp userdefinedfunctionfile.cpp`` hit enter now to run executable file use ``./a.out`` hit enter.
 >       - E.g. ``g++ jmi_p2.cpp  myfunctions.cpp`` hit enter now to run executable file use ``./a.out`` hit enter.
 <br/><br/>
+
+
+#### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
+<!-- Template 
+Q#.   _[](Assignments/Assig.%20I "View Code")_
+-->
