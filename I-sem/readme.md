@@ -10,6 +10,7 @@
 ***
 
 **[View All Assignments](C%20Programming/Assignments/ "View Code")**
+**[View All Practice Programs](C%20Programming/Misc.(Practice%20Programs) "View Code")**
 
 > ### VARIABLES, OPERATORS AND INPUT/OUTPUT FUNCTIONS.
 
