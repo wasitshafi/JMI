@@ -47,29 +47,30 @@ c) sum(time <oj>, time <ob> )  to add minutes and hours. If minutes is > 60 add 
 d) void display() to display the result.</div></a>
 
 <a href= "Assignments/Assig.%20I/jmi_p6.cpp" title = "View Code"> <div> Q.6 To write a C++ program to add two complex numbers using object as argument.
-**Algorithm:**<br/>
-    **class** as complex. 
-    **data members** as real and img. 
-    **member functions** 
-     - void getdata()  
-     - void show()  
-     - void sum(complex c1,complex c2)  
-     - getdata() method is used to get the values . 
-     - show() method is used to display the values. 
-     - sum() method is used to perform addition operation using object as argument. </div></a>
   
-  <a href= "Assignments/Assig.%20I/jmi_p7.cpp" title = "View Code"><div>Q.7 To write a C++ program to display the student details using class and array of object. 
-  **Algorithm:**
-  **class** as student. 
-  **data members rollno, name, mark1, mark2, mark3, total and average.  
-  **member functions ** as getdata() and displaydata(). 
-            - getdata() method used to get the  student details. 
-            - displaydata() method used to display the student details. 
-create an object array for the student class using the following  syntax:
-<br/><br/>
-           Get the number of students. 
-           Enter student details 
-           display the student details  </div></a>
+**Algorithm:**<br/>
+    **class** as complex.<br/>
+    **data members** as real and img. <br/>
+    **member functions** <br/>
+        - void getdata()  <br/>
+        - void show()  <br/>
+        - void sum(complex c1,complex c2)  <br/>
+        - getdata() method is used to get the values . <br/>
+        - show() method is used to display the values. <br/>
+        - sum() method is used to perform addition operation using object as argument.</div></a>
+  
+  <a href= "Assignments/Assig.%20I/jmi_p7.cpp" title = "View Code"><div>Q.7 To write a C++ program to display the student details using class and array of object.
+  
+**Algorithm:**<br/>
+   **class** as student.<br/> 
+   **data members** rollno, name, mark1, mark2, mark3, total and average.<br/>
+   **member functions** as getdata() and displaydata().<br/>
+        - getdata() method used to get the  student details.<br/>
+        - displaydata() method used to display the student details. <br/>
+Create an object array for the student class using the following syntax :<br/><br/>
+           Get the number of students.<br/>
+           Enter student details <br/>
+           display the student details</div></a>
            
   <a href= "Assignments/Assig.%20I/jmi_p8.cpp" title = "View Code"><div>Q.8 Re-write the time addition program using friend function.</div></a>
 
