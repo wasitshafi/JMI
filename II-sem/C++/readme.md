@@ -10,6 +10,7 @@
 ***
 
 **[View All Assignments](https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem/C%2B%2B/Assignments)**
+**[View All Practice Programs](https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem/C%2B%2B/Practice)**
 
 > # I- Class, object, Function
 
