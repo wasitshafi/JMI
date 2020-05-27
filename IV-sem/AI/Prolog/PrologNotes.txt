@@ -1,0 +1,7 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Prolog Notes @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+1 ) Variable start with either uppercase letter or underscore
+2 ) We can use ';' to print all the ouptut, if there exists more than one output
+3 ) Use Single quote to create atome without constranits such as atoms starts with lower case letter, does not start with number or special symbol, does not have some type2 atome in between eg : 'co-edu', '18MCA054', 'Jamia' all these are valid atoms.
+4) Variables starts with underscore or Uppercase letters  eg : Name, _name, _Name, _18Name etc
+5) Everything written within single quotes is atom
