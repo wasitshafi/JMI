@@ -11,7 +11,7 @@
 
 **[View All Assignments](https://github.com/wasitshafi/JMI-MCA/tree/master/II-sem/C%2B%2B/Assignments)**
 
-> ### Class, object, Function
+> # Class, object, Function
 
 [Q1. Write an inline function to obtain largest of three numbers.](Assignments/Assig.%20I/jmi_p1.cpp "View Code")
 
@@ -88,7 +88,23 @@ Create an object array for the student class using the following syntax :<br/><b
     • a. No of columns in the matrix should be equal to no. of elements in the vector<br/>
     • b. Apply the matrix-vector multiplication mechanism:<br/>
     • For simplicity take the matrix as 3X3 and the vector as 1X3. </div></a>
-<hr/>
+> # Constructor
+<a href= "Assignments/Assig.%20II/jmi_p1.cpp" title = "View Code"><div>Q.1 Write a C++ program to add two complex numbers.
+  
+ i) The class Complex contains three constructors.<br/>
+ &emsp;a) One with no parameter. (Used for the object for storing result.)<br/>
+ &emsp;b) With one parameter(Same value for real and imaginary part)<br/>
+ &emsp;c) With two parameters.<br/>
+ and<br/>
+ ii) Two friend functions<br/>
+ &emsp;a) One to add two complex number by taking two reference variables of class complex and returning another reference.<br/>
+ &emsp;b) To display the result </div></a>
+ 
+<a href= "Assignments/Assig.%20II/jmi_p2.cpp" title = "View Code"><div>Q.2 A Bank gives 4% interest on current account and 6% interest on savings account. An additional 3% interest is provided for savings duration of 5 years and above. Using dynamic initialization of constructor write banking program using C++.</div></a>
+
+
+<a href= "Assignments/Assig.%20I/jmi_p9.cpp" title = "View Code"><div>Q.9 </div></a>
+
 
 
 #### **Drop me a line at** <wasitshafi185290@st.jmi.ac.in>
