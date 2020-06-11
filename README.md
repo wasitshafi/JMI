@@ -31,7 +31,7 @@ solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "
 
 + **[IV-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/IV-sem)**
     - **CBCS41** - _WEB BASED DEVELOPMENT USING J2EE_
-    - **CBAE42** - _ARTIFICIAL INTELLIGENCE AND PROLOG PROGRAMMING_
+    - **CBSE42** - _ARTIFICIAL INTELLIGENCE AND PROLOG PROGRAMMING_
     - **CSCC43** - _SOFTWARE PROJECT MANAGEMENT WITH MINOR PROJECT_
     - **CSCC44** - _BIG DATA ANALYTICS AND CLOUD COMPUTING_
     - **CSCC45** - _LEADERSHIP, INTERPERSONAL SKILLS AND GROUP DYNAMICS_
@@ -39,7 +39,12 @@ solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "
     
     
 + **[V-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/V-sem)**
-
+    - **----51** -  _----_
+    - **----52** -  _----_
+    - **----53** -  _DIGITAL IMAGE PROCESSING_
+    - **----54** - _DATA MINING AND DATA WAREHOUSING_
+    - **----55** - _MACHINE LEARNING AND SOFT COMPUTING_
+    - **----56** - _PATTERN MATCHING USING PYTHON_
 
 + **VI-Semester**
 
