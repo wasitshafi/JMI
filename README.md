@@ -1,5 +1,5 @@
 **This repository contains all data like Coding Stuff, Assignments, PPTs etc which is created/written 
-solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "Visit Website") (01-08-2018 to ...)**
+solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "Visit Website") (01-08-2018 to ##-##-2021)**
 # **Quick Links :**
 
 + **[I-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/I-sem)**
