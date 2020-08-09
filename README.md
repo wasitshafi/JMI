@@ -26,7 +26,7 @@ solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "
     - **CSCC33** - _SOFTWARE ENGINEERING WITH MINOR PROJECT_
     - **CSCC34** - _ANALYSIS AND DESIGN OF ALGORITHM_
     - **CSCC35** - _COMPUTER NETWORK AND SYSTEM ADMINISTRATIONS_
-    - **CSCC36** - _SCIENTIFIC AND STATISTICAL TECHNIQUES USING FORTRAN / R_    
+    - **CSCC36** - _SCIENTIFIC AND STATISTICAL TECHNIQUES USING FORTRAN / R_
 
 
 + **[IV-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/IV-sem)**
@@ -39,12 +39,12 @@ solely by me while doing MCA from [Jamia Millia Islamia](https://www.jmi.ac.in "
     
     
 + **[V-Semester](https://github.com/wasitshafi/JMI-MCA/tree/master/V-sem)**
-    - **----51** -  _----_
-    - **----52** -  _----_
-    - **----53** -  _DIGITAL IMAGE PROCESSING_
-    - **----54** - _DATA MINING AND DATA WAREHOUSING_
-    - **----55** - _MACHINE LEARNING AND SOFT COMPUTING_
-    - **----56** - _PATTERN MATCHING USING PYTHON_
+    - **CBCS51** -  _DIGITAL IMAGE PROCESSING and GPU Programming_
+    - **CBAE52** -  _DATA MINING AND DATA WAREHOUSING_
+    - **CSCC53** -  _MACHINE LEARNING AND SOFT COMPUTING_
+    - **CSCC54** - _PATTERN MATCHING USING PYTHON Programming_
+    - **CSEC55.03** - _MODELLING AND SIMULATION_
+    - **CSEC56.20** - _IT ACT AND CYBER SCCURITY_
 
 + **VI-Semester**
 
