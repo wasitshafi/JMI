@@ -23,7 +23,7 @@ int main()
 		 	if( j == 0  )
 		 	 coef = 1;
 		 	 else
-		 	 coef = coef * ( i - j + 1) / j;
+		 	 coef = (coef * ( i - j + 1)) / j;
 		 	 
 		   printf("%d ", coef);
 		 }
