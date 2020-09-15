@@ -1,0 +1,9 @@
+You can use SWI prolog interpreter freely available. Write your program in notepad and save it with extension .pl
+
+Open SWI prolog, then from Menu, click consult to browse your program say water.pl
+
+At command prompt pose a query, to solve puzzle as shown below:
+    ?- solve((0,0), (2,_).
+
+In this prolog query, we are providing initial state, (0,0) i.e. both jug empty, goal state (2,_), in prolog underscore indicates
+ don't care value of this variable.

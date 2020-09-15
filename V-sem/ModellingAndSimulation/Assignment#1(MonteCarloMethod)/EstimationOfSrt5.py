@@ -2,7 +2,6 @@ from math import sqrt
 from random import uniform
 
 NUM = 5
-ITERATIONS = 10000000
 ITERATIONS = 100000
 EPS = .0000000001 # Epsilon
 count = 0
