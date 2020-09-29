@@ -1,0 +1,7 @@
+Q1. Write a program to perform input and output operations.
+Q2. Write a programs to illustrate decision making statements i.e. displaying division of students based on their marks, prime number, leap year, searcing, arranging values.
+Q3. Write a program illustrating the functioning (creation, inserting, deletion, max, min etc) of list, tuples and dictionary.
+Q4. write a program using functions and procedures.
+Q5. Write a program to implement OOPs concepts in python i.e. inheritance etc.
+Q6. Write a program for creation, insertion, deletion operation in files, text files, csv files, excel files, etc.
+Q7. write a program to perform some data analytics using machine learning packages, i.e. pandas, preprocessing regression, classification, clustering, datasets, etc.
