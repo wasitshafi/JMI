@@ -1,0 +1,1 @@
+Q7. write a program to perform some data analytics using machine learning packages, i.e. pandas, preprocessing regression, classification, clustering, datasets, etc.
