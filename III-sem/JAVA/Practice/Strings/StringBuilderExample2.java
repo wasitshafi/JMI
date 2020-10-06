@@ -14,6 +14,8 @@ public class StringBuilderExample2
         {
             if(i == str.length()) break;
             sb.replace(i, i + 1, Character.toString(str.charAt(i))); // sb[i] = s[i] in c++
+            //sb.replace(i, i, Character.toString(str.charAt(i))); // this will insert a new character 
+
 
         }    
     

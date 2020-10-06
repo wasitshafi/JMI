@@ -6,6 +6,6 @@ class Main{
     {
         student s = new student();
 
-        System.out.print() s instanceof student );
+        System.out.print( s instanceof student );
     }
 }

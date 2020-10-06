@@ -24,7 +24,7 @@ public class BigIntegerLogicalOperations
         
         if( BigInteger.valueOf(x).compareTo(b1) > 0 )
             System.out.println("Integer Variable(x) is greater than biginteger(b1).");
-        else if (BigInteger.valueOf(x).compareTo(b1) > 0)
+        else if (BigInteger.valueOf(x).compareTo(b1) < 0)
             System.out.println("Integer Variable(x) is less than biginteger(b1).");
         else
             System.out.println("Both are equal");

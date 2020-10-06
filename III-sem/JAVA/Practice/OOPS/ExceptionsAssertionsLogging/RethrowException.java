@@ -30,7 +30,7 @@ public class RethrowException
         catch(IndexOutOfBoundsException e)
         {
             out.println("Inside IndexOutOfBoundsException");
-            throw new NullPointerException("Error : " + e.getMessage()); //it is a better idea to set the original exception as the "cause" of the new exception
+            throw new NullPointerException("Error : " + e.getMessage()); // It is a better idea to set the original exception as the "cause" of the new exception
         }
          catch(NegativeArraySizeException e)
         {

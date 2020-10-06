@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.io.Console;
 
@@ -17,8 +18,9 @@ public class ReadPassword
 
         System.out.println();
         System.out.println("User Name : " + userName);
-        System.out.print("Password  : ");
-        System.out.println(password);
+        System.out.println("Password  : " + password);
+        System.out.println("Password  : " + Arrays.toString(password));
+        System.out.println("Password  : " + new String(password));
         scan.close();
     }
 }

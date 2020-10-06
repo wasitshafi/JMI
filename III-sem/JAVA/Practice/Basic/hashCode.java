@@ -34,7 +34,7 @@ public class hashCode{
         t2.show();
         t3.show();
         
-        System.out.println("\nHash code of t1 is : " + t1.hashCode()); // NOTE :All class in java extends to object class consisting of several methods.
+        System.out.println("\nHash code of t1 is : " + t1.hashCode()); // NOTE: All class in java extends to object class consisting of several methods.
         System.out.println("Hash code of t2 is : " + t2.hashCode());
         System.out.println("Hash code of t3 is : " + t3.hashCode());
     }

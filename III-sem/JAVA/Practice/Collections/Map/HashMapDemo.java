@@ -26,7 +26,7 @@ public class HashMapDemo
         m.put(2, "two");
 
         System.out.println("map : " + m + "\n");
-        System.out.println("m.keySet()         : " + m.keySet());
+        System.out.println("m.keySet()         : " + m.keySet()); // keys will always be unique, that is keySet()
         System.out.println("m.values()         : " + m.values());
         System.out.println("m.containsKey(5)   : " + m.containsKey(5));
         System.out.println("m.containsValue(\"ten\") : " + m.containsValue("ten"));
