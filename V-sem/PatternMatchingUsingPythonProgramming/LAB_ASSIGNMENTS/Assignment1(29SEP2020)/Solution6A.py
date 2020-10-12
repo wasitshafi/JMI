@@ -44,10 +44,14 @@ file = open(file_name, 'r+') # opening a file in read & write mode
 # Read file
 #print("File  contents are as : ", file.read())  # Method 1
 # Method 2
-print("File  contents are as : ")
+print("\n\nFile  contents are as : ")
 read_file(file)
 file.close()
 
 # Deleting a specific line from text file
 #delete_line(file_name)
 delete_line('file1.txt')
+print("\n\nFile  contents are After Delete operation as : ")
+file = open(file_name, 'r+') # opening a file in read & write mode
+read_file(file)
+file.close()
