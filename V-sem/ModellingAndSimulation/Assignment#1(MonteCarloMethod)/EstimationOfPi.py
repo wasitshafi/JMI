@@ -1,3 +1,4 @@
+#https://medium.com/cantors-paradise/calculating-the-value-of-pi-using-random-numbers-a-monte-carlo-simulation-d4b80dc12bdf
 from math import pi
 from random import uniform
 
@@ -10,7 +11,7 @@ for i in range(ITERATIONS):
 	if (x ** 2 + y ** 2) <= 1:
 		count += 1
 
-estimation = 4 * count / ITERATIONS
+estimation = (4 * count) / ITERATIONS
 print("Estimation value of PI is : ", estimation)
 print("Actaual value of PI is    : ", pi)
 print("Error : ", pi - estimation)
