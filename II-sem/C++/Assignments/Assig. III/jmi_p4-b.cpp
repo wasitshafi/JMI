@@ -30,7 +30,16 @@ void DISTANCE::show()
 void DISTANCE:: operator += ( DISTANCE d)
 {
     feet += d.feet;
-    inches += d.inches;  
+    
+    if(inches+d.inches >=12){  //if total inches is greater than 12
+        feet+=(inches + d.inches)/12; //add the remaining inches into feet
+        d.inches = d.inches % 12;  //curtail the inches value if above 12
+        inches = inches % 12;
+        inches = (inches + d.inches) % 12; //add the inches value
+    }
+    else{
+    inches += d.inches;
+    }
 }
 
 int main()
